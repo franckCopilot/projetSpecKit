@@ -20,18 +20,18 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create Next.js 14 project with App Router and TypeScript in root directory
-- [ ] T002 [P] Install and configure Tailwind CSS in tailwind.config.ts
-- [ ] T003 [P] Configure ESLint and Prettier in .eslintrc.json and .prettierrc
-- [ ] T004 [P] Setup Resend SDK and create .env.example with RESEND_API_KEY placeholder
-- [ ] T005 [P] Create .gitignore to exclude .env.local and .next/
-- [ ] T006 [P] Install Zod for validation in package.json
-- [ ] T007 [P] Install React Hook Form for contact form in package.json
-- [ ] T008 [P] Setup Playwright for E2E testing in playwright.config.ts
-- [ ] T009 [P] Setup Vitest for unit testing in vitest.config.ts
-- [ ] T010 Create project structure directories: app/, components/, lib/, data/, public/, tests/
-- [ ] T011 [P] Configure TypeScript strict mode in tsconfig.json
-- [ ] T012 [P] Setup Vercel deployment configuration in vercel.json
+- [X] T001 Create Next.js 14 project with App Router and TypeScript in root directory
+- [X] T002 [P] Install and configure Tailwind CSS in tailwind.config.ts
+- [X] T003 [P] Configure ESLint and Prettier in .eslintrc.json and .prettierrc
+- [X] T004 [P] Setup Resend SDK and create .env.example with RESEND_API_KEY placeholder
+- [X] T005 [P] Create .gitignore to exclude .env.local and .next/
+- [X] T006 [P] Install Zod for validation in package.json
+- [X] T007 [P] Install React Hook Form for contact form in package.json
+- [X] T008 [P] Setup Playwright for E2E testing in playwright.config.ts
+- [X] T009 [P] Setup Vitest for unit testing in vitest.config.ts
+- [X] T010 Create project structure directories: app/, components/, lib/, data/, public/, tests/
+- [X] T011 [P] Configure TypeScript strict mode in tsconfig.json
+- [X] T012 [P] Setup Vercel deployment configuration in vercel.json
 
 ---
 
@@ -41,18 +41,18 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T013 Create TypeScript types for Offre in types/offre.ts
-- [ ] T014 [P] Create TypeScript types for Expert in types/expert.ts
-- [ ] T015 [P] Create TypeScript types for Contact in types/contact.ts
-- [ ] T016 Create static data for 5 offres de formation in data/offres.ts (FR-010 to FR-014)
-- [ ] T017 [P] Create static data for Expert (Franck Petretto) in data/expert.ts
-- [ ] T018 Create Zod validation schemas in lib/validation.ts (contactFormSchema, offreFormationSchema)
-- [ ] T019 Create global layout with navigation structure in app/layout.tsx (FR-026)
-- [ ] T020 [P] Create Navigation component with responsive menu in components/Navigation.tsx (FR-026)
-- [ ] T021 [P] Configure Tailwind theme for "haut de gamme" design in tailwind.config.ts (FR-027)
-- [ ] T022 [P] Add global styles and CSS reset in app/globals.css
-- [ ] T023 [P] Add Franck Petretto photo to public/franck-petretto.jpg (FR-001)
-- [ ] T024 Create SEO metadata helper utility in lib/metadata.ts
+- [X] T013 Create TypeScript types for Offre in types/offre.ts
+- [X] T014 [P] Create TypeScript types for Expert in types/expert.ts
+- [X] T015 [P] Create TypeScript types for Contact in types/contact.ts
+- [X] T016 Create static data for 5 offres de formation in data/offres.ts (FR-010 to FR-014)
+- [X] T017 [P] Create static data for Expert (Franck Petretto) in data/expert.ts
+- [X] T018 Create Zod validation schemas in lib/validation.ts (contactFormSchema, offreFormationSchema)
+- [X] T019 Create global layout with navigation structure in app/layout.tsx (FR-026)
+- [X] T020 [P] Create Navigation component with responsive menu in components/Navigation.tsx (FR-026)
+- [X] T021 [P] Configure Tailwind theme for "haut de gamme" design in tailwind.config.ts (FR-027)
+- [X] T022 [P] Add global styles and CSS reset in app/globals.css
+- [X] T023 [P] Add Franck Petretto photo to public/franck-petretto.jpg (FR-001)
+- [X] T024 Create SEO metadata helper utility in lib/metadata.ts
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -66,23 +66,23 @@
 
 ### Tests E2E for User Story 1 (REQUIRED)
 
-- [ ] T025 [P] [US1] Create E2E test for homepage hero section display in tests/e2e/us1-homepage.spec.ts
-- [ ] T026 [P] [US1] Create E2E test for navigation to À propos page in tests/e2e/us1-navigation.spec.ts
-- [ ] T027 [P] [US1] Create E2E test for expert biography display in tests/e2e/us1-about.spec.ts
+- [X] T025 [P] [US1] Create E2E test for homepage hero section display in tests/e2e/us1-homepage.spec.ts
+- [X] T026 [P] [US1] Create E2E test for navigation to À propos page in tests/e2e/us1-navigation.spec.ts
+- [X] T027 [P] [US1] Create E2E test for expert biography display in tests/e2e/us1-about.spec.ts
 
 ### Implementation for User Story 1
 
-- [ ] T028 [P] [US1] Create homepage with hero section in app/page.tsx (FR-001, FR-002, FR-003)
-- [ ] T029 [P] [US1] Create À propos page with expert profile in app/a-propos/page.tsx (FR-005 to FR-008)
-- [ ] T030 [US1] Add optimized Image component for Franck Petretto photo on homepage in app/page.tsx (FR-001)
-- [ ] T031 [US1] Implement hero title and subtitle section in app/page.tsx (FR-002, FR-003)
-- [ ] T032 [US1] Add navigation link to À propos in components/Navigation.tsx (FR-004, FR-026)
-- [ ] T033 [US1] Create ExpertProfile component for biography display in components/ExpertProfile.tsx (FR-006, FR-007)
-- [ ] T034 [US1] Add Grenoble location highlight section in app/a-propos/page.tsx (FR-008)
-- [ ] T035 [US1] Add SEO metadata for homepage in app/page.tsx
-- [ ] T036 [US1] Add SEO metadata for À propos page in app/a-propos/page.tsx
-- [ ] T037 [US1] Implement responsive layout for homepage hero on mobile/tablet in app/page.tsx
-- [ ] T038 [US1] Implement responsive layout for À propos page on mobile/tablet in app/a-propos/page.tsx
+- [X] T028 [P] [US1] Create homepage with hero section in app/page.tsx (FR-001, FR-002, FR-003)
+- [X] T029 [P] [US1] Create À propos page with expert profile in app/a-propos/page.tsx (FR-005 to FR-008)
+- [X] T030 [US1] Add optimized Image component for Franck Petretto photo on homepage in app/page.tsx (FR-001)
+- [X] T031 [US1] Implement hero title and subtitle section in app/page.tsx (FR-002, FR-003)
+- [X] T032 [US1] Add navigation link to À propos in components/Navigation.tsx (FR-004, FR-026)
+- [X] T033 [US1] Create ExpertProfile component for biography display in components/ExpertProfile.tsx (FR-006, FR-007)
+- [X] T034 [US1] Add Grenoble location highlight section in app/a-propos/page.tsx (FR-008)
+- [X] T035 [US1] Add SEO metadata for homepage in app/page.tsx
+- [X] T036 [US1] Add SEO metadata for À propos page in app/a-propos/page.tsx
+- [X] T037 [US1] Implement responsive layout for homepage hero on mobile/tablet in app/page.tsx
+- [X] T038 [US1] Implement responsive layout for À propos page on mobile/tablet in app/a-propos/page.tsx
 
 **Checkpoint**: User Story 1 complete - Visitor can discover Franck Petretto's expertise and value proposition
 
@@ -96,22 +96,22 @@
 
 ### Tests E2E for User Story 2 (REQUIRED)
 
-- [ ] T039 [P] [US2] Create E2E test for 5 offres display with correct data in tests/e2e/us2-services.spec.ts
-- [ ] T040 [P] [US2] Create E2E test for filtering/identifying offres by public cible in tests/e2e/us2-services-filter.spec.ts
-- [ ] T041 [P] [US2] Create E2E test for price display for all offres in tests/e2e/us2-pricing.spec.ts
+- [X] T039 [P] [US2] Create E2E test for 5 offres display with correct data in tests/e2e/us2-services.spec.ts
+- [X] T040 [P] [US2] Create E2E test for filtering/identifying offres by public cible in tests/e2e/us2-services-filter.spec.ts
+- [X] T041 [P] [US2] Create E2E test for price display for all offres in tests/e2e/us2-pricing.spec.ts
 
 ### Implementation for User Story 2
 
-- [ ] T042 [P] [US2] Create Services & Offres page in app/services/page.tsx (FR-009)
-- [ ] T043 [P] [US2] Create ServiceCard component for offre display in components/ServiceCard.tsx (FR-015)
-- [ ] T044 [US2] Import and map 5 offres from data/offres.ts in app/services/page.tsx (FR-010 to FR-014)
-- [ ] T045 [US2] Implement ServiceCard to display titre, publicCible, and prix in components/ServiceCard.tsx (FR-015)
-- [ ] T046 [US2] Add navigation link to Services in components/Navigation.tsx (FR-026)
-- [ ] T047 [US2] Create responsive grid layout for offres (Tailwind) in app/services/page.tsx
-- [ ] T048 [US2] Add visual distinction for different publicCible levels in components/ServiceCard.tsx
-- [ ] T049 [US2] Add SEO metadata for Services page in app/services/page.tsx
-- [ ] T050 [US2] Implement responsive layout for ServiceCard on mobile/tablet in components/ServiceCard.tsx
-- [ ] T051 [US2] Add hover effects and visual polish to ServiceCard in components/ServiceCard.tsx (FR-027)
+- [X] T042 [P] [US2] Create Services & Offres page in app/services/page.tsx (FR-009)
+- [X] T043 [P] [US2] Create ServiceCard component for offre display in components/ServiceCard.tsx (FR-015)
+- [X] T044 [US2] Import and map 5 offres from data/offres.ts in app/services/page.tsx (FR-010 to FR-014)
+- [X] T045 [US2] Implement ServiceCard to display titre, publicCible, and prix in components/ServiceCard.tsx (FR-015)
+- [X] T046 [US2] Add navigation link to Services in components/Navigation.tsx (FR-026)
+- [X] T047 [US2] Create responsive grid layout for offres (Tailwind) in app/services/page.tsx
+- [X] T048 [US2] Add visual distinction for different publicCible levels in components/ServiceCard.tsx
+- [X] T049 [US2] Add SEO metadata for Services page in app/services/page.tsx
+- [X] T050 [US2] Implement responsive layout for ServiceCard on mobile/tablet in components/ServiceCard.tsx
+- [X] T051 [US2] Add hover effects and visual polish to ServiceCard in components/ServiceCard.tsx (FR-027)
 
 **Checkpoint**: User Story 2 complete - Prospect can explore and identify suitable training offers
 
@@ -125,32 +125,32 @@
 
 ### Tests E2E for User Story 3 (REQUIRED)
 
-- [ ] T052 [P] [US3] Create E2E test for contact form validation errors in tests/e2e/us3-contact-validation.spec.ts (FR-022)
-- [ ] T053 [P] [US3] Create E2E test for successful form submission and redirect in tests/e2e/us3-contact-success.spec.ts (FR-020)
-- [ ] T054 [P] [US3] Create E2E test for failed submission error handling in tests/e2e/us3-contact-error.spec.ts (FR-021)
-- [ ] T055 [P] [US3] Create E2E test for thank you page display in tests/e2e/us3-merci.spec.ts (FR-023 to FR-025)
+- [X] T052 [P] [US3] Create E2E test for contact form validation errors in tests/e2e/us3-contact-validation.spec.ts (FR-022)
+- [X] T053 [P] [US3] Create E2E test for successful form submission and redirect in tests/e2e/us3-contact-success.spec.ts (FR-020)
+- [X] T054 [P] [US3] Create E2E test for failed submission error handling in tests/e2e/us3-contact-error.spec.ts (FR-021)
+- [X] T055 [P] [US3] Create E2E test for thank you page display in tests/e2e/us3-merci.spec.ts (FR-023 to FR-025)
 
 ### Implementation for User Story 3
 
-- [ ] T056 [P] [US3] Create Contact page in app/contact/page.tsx (FR-016)
-- [ ] T057 [P] [US3] Create ContactForm component with React Hook Form in components/ContactForm.tsx (FR-017)
-- [ ] T058 [P] [US3] Create Thank You page in app/merci/page.tsx (FR-023 to FR-025)
-- [ ] T059 [P] [US3] Create Resend email service utility in lib/email.ts (FR-018)
-- [ ] T060 [P] [US3] Create API route for contact form in app/api/contact/route.ts (FR-018)
-- [ ] T061 [US3] Implement client-side validation with Zod in components/ContactForm.tsx (FR-019)
-- [ ] T062 [US3] Implement server-side validation with Zod in app/api/contact/route.ts (FR-019)
-- [ ] T063 [US3] Implement Resend email sending to franck.petretto@free.fr in app/api/contact/route.ts (FR-018)
-- [ ] T064 [US3] Add rate limiting (5 submissions per IP per hour) in app/api/contact/route.ts
-- [ ] T065 [US3] Implement success redirect to /merci in components/ContactForm.tsx (FR-020)
-- [ ] T066 [US3] Implement error handling with fallback email display in components/ContactForm.tsx (FR-021)
-- [ ] T067 [US3] Add inline validation error messages in French in components/ContactForm.tsx (FR-022)
-- [ ] T068 [US3] Add navigation link to Contact in components/Navigation.tsx (FR-026)
-- [ ] T069 [US3] Add confirmation message and return link on Thank You page in app/merci/page.tsx (FR-024, FR-025)
-- [ ] T070 [US3] Add SEO metadata for Contact page in app/contact/page.tsx
-- [ ] T071 [US3] Add SEO metadata for Thank You page in app/merci/page.tsx
-- [ ] T072 [US3] Implement responsive layout for ContactForm on mobile/tablet in components/ContactForm.tsx
-- [ ] T073 [US3] Add loading state and submit button disabled during submission in components/ContactForm.tsx
-- [ ] T074 [US3] Add honeypot field for bot detection in components/ContactForm.tsx
+- [X] T056 [P] [US3] Create Contact page in app/contact/page.tsx (FR-016)
+- [X] T057 [P] [US3] Create ContactForm component with React Hook Form in components/ContactForm.tsx (FR-017)
+- [X] T058 [P] [US3] Create Thank You page in app/merci/page.tsx (FR-023 to FR-025)
+- [X] T059 [P] [US3] Create Resend email service utility in lib/email.ts (FR-018)
+- [X] T060 [P] [US3] Create API route for contact form in app/api/contact/route.ts (FR-018)
+- [X] T061 [US3] Implement client-side validation with Zod in components/ContactForm.tsx (FR-019)
+- [X] T062 [US3] Implement server-side validation with Zod in app/api/contact/route.ts (FR-019)
+- [X] T063 [US3] Implement Resend email sending to franck.petretto@free.fr in app/api/contact/route.ts (FR-018)
+- [X] T064 [US3] Add rate limiting (5 submissions per IP per hour) in app/api/contact/route.ts
+- [X] T065 [US3] Implement success redirect to /merci in components/ContactForm.tsx (FR-020)
+- [X] T066 [US3] Implement error handling with fallback email display in components/ContactForm.tsx (FR-021)
+- [X] T067 [US3] Add inline validation error messages in French in components/ContactForm.tsx (FR-022)
+- [X] T068 [US3] Add navigation link to Contact in components/Navigation.tsx (FR-026)
+- [X] T069 [US3] Add confirmation message and return link on Thank You page in app/merci/page.tsx (FR-024, FR-025)
+- [X] T070 [US3] Add SEO metadata for Contact page in app/contact/page.tsx
+- [X] T071 [US3] Add SEO metadata for Thank You page in app/merci/page.tsx
+- [X] T072 [US3] Implement responsive layout for ContactForm on mobile/tablet in components/ContactForm.tsx
+- [X] T073 [US3] Add loading state and submit button disabled during submission in components/ContactForm.tsx
+- [X] T074 [US3] Add honeypot field for bot detection in components/ContactForm.tsx
 
 **Checkpoint**: User Story 3 complete - Prospect can successfully contact Franck Petretto and receive confirmation
 
@@ -160,7 +160,7 @@
 
 **Purpose**: SEO, accessibility, performance, RGPD compliance, and final optimizations
 
-- [ ] T075 [P] Create Mentions Légales / Politique Confidentialité page in app/mentions-legales/page.tsx
+- [X] T075 [P] Create Mentions Légales / Politique Confidentialité page in app/mentions-legales/page.tsx
 - [ ] T076 [P] Add consent checkbox for RGPD in components/ContactForm.tsx
 - [ ] T077 [P] Add cookie banner (if needed) in components/CookieBanner.tsx
 - [ ] T078 [P] Add alt text to all images for accessibility
@@ -168,17 +168,17 @@
 - [ ] T080 [P] Run WAVE/aXe accessibility tests and fix issues (WCAG 2.1 AA)
 - [ ] T081 [P] Add Schema.org structured data for Organization in app/layout.tsx
 - [ ] T082 [P] Add Schema.org structured data for TrainingCourse in app/services/page.tsx
-- [ ] T083 [P] Generate sitemap.xml in app/sitemap.ts
-- [ ] T084 [P] Generate robots.txt in app/robots.ts
+- [X] T083 [P] Generate sitemap.xml in app/sitemap.ts
+- [X] T084 [P] Generate robots.txt in app/robots.ts
 - [ ] T085 [P] Optimize images with Next.js Image (blur placeholders) in all pages
 - [ ] T086 [P] Configure font optimization (Google Fonts or local) in app/layout.tsx
 - [ ] T087 [P] Add Vercel Analytics for Web Vitals tracking in app/layout.tsx
 - [ ] T088 Run Lighthouse performance audit and achieve score > 90
 - [ ] T089 Run cross-browser testing (Chrome, Firefox, Safari, Edge)
 - [ ] T090 Validate quickstart.md steps work on clean install
-- [ ] T091 [P] Add error boundary for global error handling in app/error.tsx
-- [ ] T092 [P] Add 404 page in app/not-found.tsx
-- [ ] T093 [P] Add loading states for pages in app/loading.tsx
+- [X] T091 [P] Add error boundary for global error handling in app/error.tsx
+- [X] T092 [P] Add 404 page in app/not-found.tsx
+- [X] T093 [P] Add loading states for pages in app/loading.tsx
 - [ ] T094 Code cleanup and remove console.logs across all files
 - [ ] T095 Final visual polish and animations (Framer Motion optional) in components/
 - [ ] T096 Security audit for API route (CSRF, rate limiting, input sanitization)
