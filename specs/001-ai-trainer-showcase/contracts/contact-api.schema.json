@@ -1,0 +1,304 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Contact API Contract",
+  "description": "Contract for POST /api/contact endpoint - Sends contact form data via email to franck.petretto@free.fr",
+  "version": "1.0.0",
+  "endpoint": "/api/contact",
+  "method": "POST",
+  
+  "request": {
+    "contentType": "application/json",
+    "headers": {
+      "type": "object",
+      "properties": {
+        "Content-Type": {
+          "type": "string",
+          "enum": ["application/json"],
+          "description": "Must be application/json"
+        }
+      },
+      "required": ["Content-Type"]
+    },
+    "body": {
+      "type": "object",
+      "properties": {
+        "nom": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 100,
+          "description": "Full name of the contact (FR-017)",
+          "example": "Jean Dupont"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Valid email address (FR-019)",
+          "example": "jean.dupont@example.com"
+        },
+        "message": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 2000,
+          "description": "Contact message or inquiry (FR-017)",
+          "example": "Je souhaiterais obtenir plus d'informations sur la formation Microsoft Copilot Studio."
+        }
+      },
+      "required": ["nom", "email", "message"],
+      "additionalProperties": false
+    }
+  },
+  
+  "responses": {
+    "200": {
+      "description": "Email sent successfully (FR-020: triggers redirect to /merci)",
+      "contentType": "application/json",
+      "body": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "const": true
+          },
+          "message": {
+            "type": "string",
+            "example": "Votre message a été envoyé avec succès. Vous allez être redirigé..."
+          },
+          "emailId": {
+            "type": "string",
+            "description": "Resend email ID for tracking",
+            "example": "re_abc123def456"
+          }
+        },
+        "required": ["success", "message"]
+      }
+    },
+    
+    "400": {
+      "description": "Validation error - invalid or missing fields (FR-022)",
+      "contentType": "application/json",
+      "body": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "const": false
+          },
+          "error": {
+            "type": "string",
+            "example": "Validation échouée"
+          },
+          "details": {
+            "type": "object",
+            "description": "Field-specific validation errors",
+            "properties": {
+              "nom": {
+                "type": "array",
+                "items": { "type": "string" },
+                "example": ["Le nom doit contenir au moins 2 caractères"]
+              },
+              "email": {
+                "type": "array",
+                "items": { "type": "string" },
+                "example": ["Adresse email invalide"]
+              },
+              "message": {
+                "type": "array",
+                "items": { "type": "string" },
+                "example": ["Le message doit contenir au moins 10 caractères"]
+              }
+            }
+          }
+        },
+        "required": ["success", "error"]
+      }
+    },
+    
+    "429": {
+      "description": "Rate limit exceeded - too many requests from same IP",
+      "contentType": "application/json",
+      "body": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "const": false
+          },
+          "error": {
+            "type": "string",
+            "example": "Trop de tentatives. Veuillez réessayer dans 1 heure."
+          },
+          "retryAfter": {
+            "type": "number",
+            "description": "Seconds until rate limit resets",
+            "example": 3600
+          }
+        },
+        "required": ["success", "error"]
+      }
+    },
+    
+    "500": {
+      "description": "Server error - email sending failed (FR-021: display error + alternative email)",
+      "contentType": "application/json",
+      "body": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "const": false
+          },
+          "error": {
+            "type": "string",
+            "example": "Une erreur est survenue lors de l'envoi du message."
+          },
+          "fallbackEmail": {
+            "type": "string",
+            "const": "franck.petretto@free.fr",
+            "description": "Alternative contact email to display (FR-021)"
+          },
+          "details": {
+            "type": "string",
+            "description": "Technical error details (only in dev mode)",
+            "example": "Resend API error: Invalid API key"
+          }
+        },
+        "required": ["success", "error", "fallbackEmail"]
+      }
+    }
+  },
+  
+  "security": {
+    "rateLimit": {
+      "maxRequests": 5,
+      "windowMinutes": 60,
+      "byIp": true,
+      "description": "Max 5 form submissions per IP per hour (anti-spam)"
+    },
+    "csrfProtection": {
+      "enabled": true,
+      "description": "Next.js built-in CSRF protection (same-origin policy)"
+    },
+    "emailValidation": {
+      "clientSide": true,
+      "serverSide": true,
+      "library": "Zod",
+      "description": "Double validation (client + server) per FR-019"
+    }
+  },
+  
+  "businessRules": [
+    "FR-018: Email must be sent to franck.petretto@free.fr",
+    "FR-019: Email address must be validated (RFC 5322 format)",
+    "FR-020: On success (200), client redirects to /merci page",
+    "FR-021: On failure (500), client displays error message + alternative email franck.petretto@free.fr",
+    "FR-022: On validation error (400), client displays inline field errors",
+    "Honeypot field (invisible) added for bot detection (not in schema, client-side only)",
+    "All error messages must be in French"
+  ],
+  
+  "examples": {
+    "successRequest": {
+      "request": {
+        "method": "POST",
+        "url": "/api/contact",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "nom": "Marie Martin",
+          "email": "marie.martin@entreprise.fr",
+          "message": "Bonjour, je suis intéressée par la formation sur Microsoft Copilot Studio pour créer des agents IA. Pourriez-vous me fournir plus de détails sur le programme et les dates disponibles ?"
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "success": true,
+          "message": "Votre message a été envoyé avec succès. Vous allez être redirigé...",
+          "emailId": "re_xyz789abc123"
+        }
+      }
+    },
+    
+    "validationErrorRequest": {
+      "request": {
+        "method": "POST",
+        "url": "/api/contact",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "nom": "A",
+          "email": "invalid-email",
+          "message": "Court"
+        }
+      },
+      "response": {
+        "status": 400,
+        "body": {
+          "success": false,
+          "error": "Validation échouée",
+          "details": {
+            "nom": ["Le nom doit contenir au moins 2 caractères"],
+            "email": ["Adresse email invalide"],
+            "message": ["Le message doit contenir au moins 10 caractères"]
+          }
+        }
+      }
+    },
+    
+    "serverErrorRequest": {
+      "request": {
+        "method": "POST",
+        "url": "/api/contact",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "nom": "Pierre Dubois",
+          "email": "pierre.dubois@example.com",
+          "message": "Message de test pour vérifier l'envoi d'email."
+        }
+      },
+      "response": {
+        "status": 500,
+        "body": {
+          "success": false,
+          "error": "Une erreur est survenue lors de l'envoi du message. Veuillez réessayer ou nous contacter directement.",
+          "fallbackEmail": "franck.petretto@free.fr"
+        }
+      }
+    }
+  },
+  
+  "implementation": {
+    "framework": "Next.js 14 App Router",
+    "filePath": "/app/api/contact/route.ts",
+    "runtime": "Node.js (Vercel Serverless Function)",
+    "timeout": "10 seconds (Vercel default)",
+    "validation": "Zod (lib/validation.ts - contactFormSchema)",
+    "emailService": "Resend SDK",
+    "environment": {
+      "RESEND_API_KEY": "Secret - Resend API key",
+      "NEXT_PUBLIC_SITE_URL": "Public - Site URL for redirects"
+    }
+  },
+  
+  "testing": {
+    "unit": [
+      "Validate Zod schema with valid data → passes",
+      "Validate Zod schema with invalid email → fails",
+      "Validate Zod schema with missing fields → fails"
+    ],
+    "integration": [
+      "Mock Resend API → POST /api/contact returns 200",
+      "Mock Resend API failure → POST /api/contact returns 500 with fallbackEmail",
+      "Rate limiting → 6th request in 1h returns 429"
+    ],
+    "e2e": [
+      "Fill form with valid data → submit → redirects to /merci (FR-020)",
+      "Fill form with invalid email → submit → shows inline error (FR-019, FR-022)",
+      "API returns 500 → shows error message + franck.petretto@free.fr (FR-021)"
+    ]
+  }
+}
