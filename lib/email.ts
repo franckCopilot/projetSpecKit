@@ -2,7 +2,19 @@
 import { Resend } from 'resend';
 import { ContactFormData } from '@/types/contact';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Lazy initialization to avoid build-time errors
+let resendInstance: Resend | null = null;
+
+function getResendClient(): Resend {
+  if (!resendInstance) {
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
+      throw new Error('RESEND_API_KEY environment variable is not set');
+    }
+    resendInstance = new Resend(apiKey);
+  }
+  return resendInstance;
+}
 
 export interface SendContactEmailParams {
   from: ContactFormData;
@@ -14,6 +26,7 @@ export async function sendContactEmail({
   recipientEmail,
 }: SendContactEmailParams): Promise<{ success: boolean; emailId?: string; error?: string }> {
   try {
+    const resend = getResendClient();
     const { data, error } = await resend.emails.send({
       from: 'Contact Site Franck Petretto <onboarding@resend.dev>', // Email vérifié Resend
       to: [recipientEmail],
