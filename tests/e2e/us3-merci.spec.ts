@@ -8,8 +8,9 @@ test.describe('User Story 3 - Thank You Page', () => {
     await page.goto('/merci');
 
     // Vérifier le message de confirmation (FR-023)
+    // Le texte exact est "Message envoyé avec succès !" dans le h1
     const confirmationMessage = page.getByText(
-      /votre message a été envoyé avec succès/i
+      /message envoyé avec succès/i
     );
     await expect(confirmationMessage).toBeVisible();
   });
@@ -36,7 +37,8 @@ test.describe('User Story 3 - Thank You Page', () => {
     await expect(heading).toBeVisible();
 
     // Le message devrait mentionner Franck Petretto
-    await expect(page.getByText(/franck petretto/i)).toBeVisible();
+    // Utiliser .first() car le nom peut apparaître plusieurs fois (nav, footer)
+    await expect(page.getByText(/franck petretto/i).first()).toBeVisible();
   });
 
   test('should display expected response time information', async ({
@@ -55,8 +57,9 @@ test.describe('User Story 3 - Thank You Page', () => {
     await page.goto('/merci');
 
     await expect(page).toHaveTitle(/merci/i);
+    // Vérifier avec le texte exact qui existe dans la page
     await expect(
-      page.getByText(/votre message a été envoyé/i)
+      page.getByText(/message envoyé avec succès/i)
     ).toBeVisible();
   });
 

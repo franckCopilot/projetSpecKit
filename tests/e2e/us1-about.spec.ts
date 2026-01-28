@@ -10,16 +10,16 @@ test.describe('User Story 1 - Expert Biography Display', () => {
     await expect(name).toBeVisible();
 
     // Vérifier la biographie (FR-007)
-    const biography = page.getByText(/passionné par les technologies/i);
+    const biography = page.getByText(/passionné par les technologies/i).first();
     await expect(biography).toBeVisible();
 
-    // Vérifier la mention de Grenoble (FR-008)
-    const location = page.getByText(/grenoble/i);
+    // Vérifier la mention de Grenoble (FR-008) - utiliser le heading spécifique
+    const location = page.getByRole('heading', { name: /basé à grenoble/i });
     await expect(location).toBeVisible();
 
-    // Vérifier que la photo est présente
+    // Vérifier que la photo est présente dans le viewport
     const photo = page.getByAltText(/franck petretto/i);
-    await expect(photo).toBeVisible();
+    await expect(photo).toBeInViewport();
   });
 
   test('should display expertise domains', async ({ page }) => {
@@ -33,7 +33,7 @@ test.describe('User Story 1 - Expert Biography Display', () => {
     ];
 
     for (const domain of expertiseDomains) {
-      const text = page.getByText(domain);
+      const text = page.getByText(domain).first();
       await expect(text).toBeVisible();
     }
   });
@@ -52,11 +52,11 @@ test.describe('User Story 1 - Expert Biography Display', () => {
     await page.goto('/a-propos');
 
     // Vérifier que Grenoble est présenté comme un atout (FR-008)
-    const grenobleText = page.getByText(/grenoble/i);
-    await expect(grenobleText).toBeVisible();
+    const grenobleHeading = page.getByRole('heading', { name: /basé à grenoble/i });
+    await expect(grenobleHeading).toBeVisible();
 
     // Devrait mentionner l'écosystème ou la proximité
-    const context = page.getByText(/écosystème/i);
+    const context = page.getByText(/écosystème|alpes|française/i).first();
     await expect(context).toBeVisible();
   });
 

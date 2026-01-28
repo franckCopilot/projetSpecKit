@@ -30,8 +30,9 @@ test.describe('User Story 3 - Failed Submission Error Handling', () => {
     ).toBeVisible();
 
     // Vérifier l'affichage de l'email alternatif (FR-021)
+    // Utiliser .first() car l'email peut apparaître plusieurs fois (footer, erreur)
     await expect(
-      page.getByText(/franck\.petretto@free\.fr/i)
+      page.getByText(/franck\.petretto@free\.fr/i).first()
     ).toBeVisible();
   });
 
@@ -57,9 +58,10 @@ test.describe('User Story 3 - Failed Submission Error Handling', () => {
     await page.getByRole('button', { name: /envoyer/i }).click();
 
     // L'email alternatif devrait être cliquable
+    // Utiliser .first() car il peut y avoir plusieurs liens (footer, erreur)
     const emailLink = page.getByRole('link', {
       name: /franck\.petretto@free\.fr/i,
-    });
+    }).first();
     await expect(emailLink).toBeVisible();
     await expect(emailLink).toHaveAttribute('href', 'mailto:franck.petretto@free.fr');
   });

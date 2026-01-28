@@ -23,9 +23,10 @@ test.describe('User Story 2 - Price Display', () => {
     await page.goto('/services');
 
     // Vérifier format : "400 €" ou "400€" (pas de décimales)
-    await expect(page.getByText(/400\s*€/)).toBeVisible();
-    await expect(page.getByText(/500\s*€/)).toBeVisible();
-    await expect(page.getByText(/600\s*€/)).toBeVisible();
+    // Utiliser .first() car il y a 3 offres à 400€
+    await expect(page.getByText(/400\s*€/).first()).toBeVisible();
+    await expect(page.getByText(/500\s*€/).first()).toBeVisible();
+    await expect(page.getByText(/600\s*€/).first()).toBeVisible();
 
     // Ne devrait PAS avoir de format avec décimales comme "400.00 €"
     await expect(page.getByText(/400\.00/)).not.toBeVisible();
