@@ -81,7 +81,7 @@ export async function POST(request: NextRequest) {
     // Envoi de l'email via Resend (FR-018)
     const emailResult = await sendContactEmail({
       from: formData,
-      recipientEmail: 'franck.petretto@free.fr',
+      recipientEmail: process.env.CONTACT_RECIPIENT_EMAIL || 'franck.petretto@free.fr',
     });
 
     if (!emailResult.success) {
