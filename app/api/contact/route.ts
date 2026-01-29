@@ -81,7 +81,7 @@ export async function POST(request: NextRequest) {
     // Envoi de l'email via Resend (FR-018)
     const emailResult = await sendContactEmail({
       from: formData,
-      recipientEmail: process.env.CONTACT_RECIPIENT_EMAIL || 'franck.petretto@free.fr',
+      recipientEmail: process.env.CONTACT_RECIPIENT_EMAIL || 'franck.petretto@gmail.com',
     });
 
     if (!emailResult.success) {
@@ -91,7 +91,7 @@ export async function POST(request: NextRequest) {
           success: false,
           error:
             'Une erreur est survenue lors de l\'envoi du message. Veuillez réessayer ou nous contacter directement.',
-          fallbackEmail: 'franck.petretto@free.fr',
+          fallbackEmail: 'franck.petretto@gmail.com',
           details:
             process.env.NODE_ENV === 'development'
               ? emailResult.error
