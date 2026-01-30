@@ -1,0 +1,22 @@
+# humans.txt - Les humains derrière le site
+# https://humanstxt.org/
+
+/* ÉQUIPE */
+Créateur et formateur: Franck Petretto
+Poste: Formateur en Intelligence Artificielle Générative
+Localisation: Grenoble, France
+Contact: contact [at] masterclass-ia.fr
+
+/* SITE */
+Standards: HTML5, CSS3, JavaScript, TypeScript
+Composants: React, Next.js 15, Tailwind CSS
+Logiciels: VS Code, Git, GitHub Copilot
+Hébergement: Vercel
+Langue: Français
+
+/* REMERCIEMENTS */
+Merci à tous mes participants aux formations qui m'inspirent chaque jour.
+Merci à la communauté open source pour les outils extraordinaires.
+
+/* DERNIÈRE MISE À JOUR */
+2025-01-30

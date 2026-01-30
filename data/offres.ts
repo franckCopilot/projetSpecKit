@@ -8,12 +8,12 @@ export const OFFRES: OffreFormation[] = [
     publicCible: 'débutant',
     prix: 399,
     description:
-      'Découvrez les fondamentaux de l\'IA Générative et ses applications pratiques pour transformer votre façon de travailler.',
+      'Formation IA pour débutants : découvrez les fondamentaux de l\'Intelligence Artificielle Générative (GenAI), les LLM (Large Language Models) et leurs applications pratiques en entreprise.',
     duree: '1/2 journée',
     objectifs: [
-      'Comprendre les principes de l\'IA Générative',
-      'Identifier les cas d\'usage en entreprise',
-      'Maîtriser les concepts clés (LLM, tokens, contexte)',
+      'Comprendre les principes de l\'IA Générative et des LLM',
+      'Identifier les cas d\'usage concrets en entreprise',
+      'Maîtriser les concepts clés (tokens, contexte, prompting)',
     ],
   },
   {
@@ -22,55 +22,55 @@ export const OFFRES: OffreFormation[] = [
     publicCible: 'débutant',
     prix: 399,
     description:
-      'Apprenez à formuler des prompts efficaces pour tirer le meilleur parti de Microsoft Copilot dans vos tâches quotidiennes.',
+      'Formation art du prompting et prompt engineering : apprenez les techniques avancées de rédaction de prompts pour exploiter tout le potentiel de Microsoft Copilot dans votre travail quotidien.',
     duree: '1/2 journée',
     objectifs: [
-      'Structurer des prompts performants',
-      'Utiliser les techniques avancées de prompting',
-      'Optimiser vos interactions avec Copilot',
+      'Maîtriser l\'art du prompting et les techniques avancées',
+      'Structurer des prompts efficaces avec le prompt engineering',
+      'Optimiser vos interactions avec Microsoft Copilot',
     ],
   },
   {
     id: 'offre-copilot-m365',
-    titre: 'Formateur Microsoft Copilot (chat et Copilot dans M365 apps)',
+    titre: 'Formation Microsoft Copilot M365 (chat et Copilot dans M365 apps)',
     publicCible: 'débutant/intermédiaire',
     prix: 899,
     description:
-      'Devenez expert de Microsoft Copilot intégré dans la suite Microsoft 365 (Word, Excel, PowerPoint, Teams, Outlook).',
+      'Formation complète Microsoft Copilot M365 : maîtrisez Copilot 365 intégré dans toute la suite Microsoft 365 (Word, Excel, PowerPoint, Teams, Outlook) pour booster votre productivité.',
     duree: '1 jour',
     objectifs: [
-      'Maîtriser Copilot dans chaque application M365',
-      'Créer des workflows productifs avec Copilot',
-      'Former vos équipes à l\'utilisation de Copilot',
+      'Maîtriser Microsoft Copilot dans chaque application M365',
+      'Créer des workflows productifs avec Copilot 365',
+      'Former vos équipes à l\'utilisation de Microsoft Copilot',
     ],
   },
   {
     id: 'offre-copilot-studio',
-    titre: 'Formateur Microsoft Copilot Studio (création d\'agents)',
+    titre: 'Formation Microsoft Copilot Studio (création d\'agents IA)',
     publicCible: 'intermédiaire',
     prix: 999,
     description:
-      'Créez vos propres agents IA personnalisés avec Microsoft Copilot Studio pour automatiser vos processus métier.',
+      'Formation Copilot Studio et création d\'agents IA : apprenez à concevoir, créer et déployer vos propres agents IA personnalisés et assistants conversationnels avec Microsoft Copilot Studio pour automatiser vos processus métier.',
     duree: '2 jours',
     objectifs: [
-      'Concevoir et créer des agents IA personnalisés',
-      'Intégrer vos données et systèmes',
-      'Déployer et gérer vos agents en production',
+      'Concevoir et créer des agents IA et assistants personnalisés',
+      'Intégrer vos données et systèmes dans Copilot Studio',
+      'Déployer et gérer vos agents conversationnels en production',
     ],
   },
   {
     id: 'offre-ia-dev',
     titre:
-      'Intégrer l\'IA dans le cycle de développement et les assistants de codage',
+      'Formation Assistants de Codage et IA pour Développeurs',
     publicCible: 'confirmé/développeur',
     prix: 1499,
     description:
-      'Pour développeurs : intégrez l\'IA dans vos workflows de développement avec Visual Studio Code, GitHub Copilot, Spec-Kit et autres assistants de codage.',
+      'Formation complète pour développeurs : maîtrisez GitHub Copilot et les assistants de codage IA. Intégrez l\'Intelligence Artificielle dans vos workflows de développement avec VS Code, GitHub Copilot, et autres outils IA pour coder plus efficacement.',
     duree: '3 jours',
     objectifs: [
-      'Optimiser votre productivité avec les assistants IA',
-      'Intégrer l\'IA dans vos pipelines CI/CD',
-      'Créer des solutions IA pour développeurs',
+      'Maîtriser GitHub Copilot et les assistants de codage IA',
+      'Optimiser votre productivité de développement avec l\'IA',
+      'Intégrer l\'IA Générative dans vos pipelines et workflows',
     ],
   },
 ];

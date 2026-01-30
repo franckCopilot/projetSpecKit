@@ -7,6 +7,7 @@ export const metadata = createMetadata({
   title: 'Contact',
   description: `Contactez ${EXPERT.nom} pour vos besoins en formation IA Générative. Expert basé à ${EXPERT.localisation}.`,
   keywords: ['Contact', 'Demande', 'Formation', 'Devis'],
+  canonicalPath: '/contact',
 });
 
 export default function ContactPage() {
@@ -17,10 +18,14 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Contactez-moi
+              Contactez votre Expert Formation IA
             </h1>
-            <p className="text-xl md:text-2xl text-primary-50">
-              Une question sur mes formations ? Un projet spécifique ? 
+            <p className="text-xl md:text-2xl text-primary-50 mb-4">
+              Formation IA Générative, Masterclass Microsoft Copilot, 
+              Copilot Studio et Agents IA à Grenoble
+            </p>
+            <p className="text-lg text-primary-100">
+              Une question sur nos formations en Intelligence Artificielle ? Un projet spécifique ? 
               Je vous réponds sous 24h.
             </p>
           </div>
@@ -34,12 +39,22 @@ export default function ContactPage() {
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
               <div className="mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                  Envoyez-moi un message
+                  Envoyez-moi un message pour votre Formation IA
                 </h2>
+                <p className="text-gray-600 mb-4">
+                  Remplissez le formulaire ci-dessous pour toute demande concernant :
+                </p>
+                <ul className="text-gray-600 space-y-1 mb-4">
+                  <li>• <strong>Formation IA Générative</strong> et masterclass IA</li>
+                  <li>• <strong>Formation Microsoft Copilot</strong> (M365, Studio)</li>
+                  <li>• <strong>Copilot Studio</strong> et création d'<strong>agents IA</strong></li>
+                  <li>• <strong>Art du prompting</strong> et prompt engineering</li>
+                  <li>• <strong>GitHub Copilot</strong> et assistants de codage</li>
+                  <li>• Formation personnalisée ou en groupe</li>
+                </ul>
                 <p className="text-gray-600">
-                  Remplissez le formulaire ci-dessous et je reviendrai vers
-                  vous dans les plus brefs délais pour discuter de vos besoins
-                  en formation IA Générative.
+                  Je reviendrai vers vous dans les plus brefs délais pour discuter 
+                  de votre projet de formation en Intelligence Artificielle.
                 </p>
               </div>
 

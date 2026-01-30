@@ -13,6 +13,7 @@ export const metadata = createMetadata({
     'Formateur',
     EXPERT.localisation,
   ],
+  canonicalPath: '/a-propos',
 });
 
 export default function AProposPage() {
@@ -25,8 +26,12 @@ export default function AProposPage() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               À propos de {EXPERT.nom}
             </h1>
-            <p className="text-xl md:text-2xl text-primary-700 font-semibold">
+            <p className="text-xl md:text-2xl text-primary-700 font-semibold mb-4">
               {EXPERT.tagline}
+            </p>
+            <p className="text-lg text-gray-700">
+              Expert en Formation IA Générative, Masterclass IA, Microsoft Copilot, 
+              Copilot Studio et Agents IA à Grenoble
             </p>
           </div>
         </div>
@@ -64,7 +69,7 @@ export default function AProposPage() {
                 {/* Domaines d'Expertise */}
                 <div className="mt-8">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    Domaines d'Expertise
+                    Domaines d'Expertise : Formation IA et Masterclass
                   </h3>
                   <div className="grid sm:grid-cols-2 gap-3">
                     {EXPERT.domainesExpertise.map((domaine, index) => (
@@ -91,22 +96,24 @@ export default function AProposPage() {
                   </div>
                 </div>
 
-                {/* Localisation Grenoble */}
-                <div className="mt-8 bg-gradient-to-br from-accent-50 to-primary-50 p-6 rounded-xl shadow-md">
+                {/* Compétences SEO */}
+                <div className="mt-8 bg-white p-6 rounded-xl shadow-md">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    📍 Basé à {EXPERT.localisation}
+                    🎯 Formation IA à Grenoble et Partout en France
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Située au cœur des Alpes françaises, Grenoble est un pôle
+                    Située au cœur des Alpes françaises, <strong>Grenoble</strong> est un pôle
                     d'excellence en matière de technologies et d'innovation.
                     Cette position privilégiée au sein de l'écosystème
                     technologique français me permet de combiner une expertise
                     de pointe avec une approche locale et personnalisée.
                   </p>
                   <p className="text-gray-700 leading-relaxed mt-3">
-                    Que vous soyez en région Auvergne-Rhône-Alpes ou partout en
-                    France, je propose des formations en présentiel et à
-                    distance pour répondre à vos besoins.
+                    Que vous soyez en région <strong>Auvergne-Rhône-Alpes</strong> ou partout en
+                    France, je propose des <strong>formations IA en présentiel</strong> et 
+                    <strong> à distance</strong> (visioconférence) pour répondre à vos besoins. 
+                    Mes <strong>masterclass IA</strong> et formations professionnelles s'adaptent 
+                    à votre organisation.
                   </p>
                 </div>
               </div>
@@ -119,11 +126,12 @@ export default function AProposPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Prêt à maîtriser l'IA Générative ?
+            Prêt à maîtriser l'IA Générative et Microsoft Copilot ?
           </h2>
           <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Découvrez mes formations adaptées à tous les niveaux, du débutant
-            au développeur confirmé.
+            Découvrez mes formations adaptées à tous niveaux : <strong>formation IA</strong>, 
+            <strong> masterclass sur l'art du prompting</strong>, <strong>Microsoft Copilot M365</strong>, 
+            <strong> Copilot Studio</strong>, <strong>agents IA</strong> et <strong>GitHub Copilot</strong>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

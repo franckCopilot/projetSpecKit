@@ -6,6 +6,7 @@ interface PageMetadataOptions {
   description: string;
   keywords?: string[];
   ogImage?: string;
+  canonicalPath?: string;
 }
 
 export function createMetadata({
@@ -13,27 +14,61 @@ export function createMetadata({
   description,
   keywords = [],
   ogImage = '/og-image.jpg',
+  canonicalPath = '',
 }: PageMetadataOptions): Metadata {
   const fullTitle = `${title} | Franck Petretto`;
+  const baseUrl = 'https://masterclass-ia.fr';
+  const canonicalUrl = `${baseUrl}${canonicalPath}`;
 
   return {
+    metadataBase: new URL(baseUrl),
     title: fullTitle,
     description,
     keywords: [
       'IA Générative',
       'Formation IA',
+      'Formation IA Générative',
+      'Masterclass IA',
       'Microsoft Copilot',
+      'Copilot Studio',
+      'Copilot M365',
+      'Art du Prompting',
+      'Prompt Engineering',
       'Prompting',
       'Grenoble',
+      'GitHub Copilot',
+      'Agents IA',
+      'Assistants IA',
+      'LLM',
+      'Large Language Models',
+      'Formation professionnelle',
+      'Intelligence Artificielle',
+      'GenAI',
+      'Formation continue',
+      'Transformation digitale',
       ...keywords,
     ],
     authors: [{ name: 'Franck Petretto' }],
+    creator: 'Franck Petretto',
+    publisher: 'Franck Petretto',
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
     openGraph: {
       title: fullTitle,
       description,
       type: 'website',
       locale: 'fr_FR',
-      siteName: 'Franck Petretto',
+      url: canonicalUrl,
+      siteName: 'Franck Petretto - Formation IA',
       images: [
         {
           url: ogImage,
@@ -48,6 +83,9 @@ export function createMetadata({
       title: fullTitle,
       description,
       images: [ogImage],
+    },
+    alternates: {
+      canonical: canonicalUrl,
     },
   };
 }

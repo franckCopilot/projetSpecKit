@@ -22,7 +22,7 @@ export default function Navigation() {
             href="/"
             className="text-xl font-bold text-primary-700 hover:text-primary-800 transition-colors"
           >
-            Formation IA
+            Masterclass IA
           </Link>
 
           {/* Desktop Navigation */}

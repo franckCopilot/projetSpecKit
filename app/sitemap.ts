@@ -2,7 +2,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://franck-petretto.fr';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://masterclass-ia.fr';
   const lastModified = new Date();
 
   return [

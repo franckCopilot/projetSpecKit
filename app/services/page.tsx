@@ -2,6 +2,7 @@
 import { OFFRES } from '@/data/offres';
 import ServiceCard from '@/components/ServiceCard';
 import { createMetadata } from '@/lib/metadata';
+import { StructuredData, serviceData } from '@/components/StructuredData';
 
 export const metadata = createMetadata({
   title: 'Services & Offres de Formation',
@@ -14,22 +15,28 @@ export const metadata = createMetadata({
     'Prompting',
     'Tarifs',
   ],
+  canonicalPath: '/services',
 });
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
+      <StructuredData data={serviceData} />
+      <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-600 to-accent-600 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Services & Offres de Formation
+              Formations IA Générative et Microsoft Copilot
             </h1>
-            <p className="text-xl md:text-2xl text-primary-50 leading-relaxed">
-              Des formations adaptées à tous les niveaux, du débutant au
-              développeur confirmé, pour maîtriser l'IA Générative et ses
-              applications professionnelles.
+            <p className="text-xl md:text-2xl text-primary-50 leading-relaxed mb-4">
+              Masterclass IA, Formation Copilot Studio, Art du Prompting et Agents IA
+            </p>
+            <p className="text-lg text-primary-100 leading-relaxed">
+              Des formations professionnelles adaptées à tous les niveaux : du débutant 
+              souhaitant découvrir l'IA Générative aux développeurs experts cherchant à 
+              maîtriser GitHub Copilot et les assistants de codage IA.
             </p>
           </div>
         </div>
@@ -39,11 +46,25 @@ export default function ServicesPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
+            {/* Introduction SEO */}
+            <div className="mb-12 text-center max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Nos Formations en Intelligence Artificielle Générative
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Que vous recherchiez une <strong>formation IA pour débutants</strong>, 
+                une <strong>masterclass sur l'art du prompting</strong>, une 
+                <strong> formation Microsoft Copilot M365</strong>, ou encore une 
+                <strong> formation Copilot Studio pour créer des agents IA</strong>, 
+                nous avons le programme adapté à vos besoins.
+              </p>
+            </div>
+
             {/* Légende des niveaux */}
             <div className="mb-12 text-center">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Trouvez la formation adaptée à votre niveau
-              </h2>
+              </h3>
               <div className="flex flex-wrap justify-center gap-4">
                 <span className="px-4 py-2 bg-green-100 text-green-800 border border-green-300 rounded-full text-sm font-semibold">
                   🌱 Débutant
@@ -81,11 +102,13 @@ export default function ServicesPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Une question sur nos formations ?
+            Une question sur nos formations IA ?
           </h2>
           <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Contactez-moi pour discuter de vos besoins et trouver la formation
-            la plus adaptée à votre situation.
+            Besoin d'une <strong>formation Microsoft Copilot</strong>, 
+            d'apprendre l'<strong>art du prompting</strong>, ou de créer 
+            des <strong>agents IA avec Copilot Studio</strong> ? 
+            Contactez-moi pour trouver la formation adaptée à votre projet.
           </p>
           <a
             href="/contact"
@@ -136,5 +159,6 @@ export default function ServicesPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

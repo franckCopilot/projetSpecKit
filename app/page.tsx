@@ -3,24 +3,35 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { EXPERT } from '@/data/expert';
 import { Metadata } from 'next';
+import { StructuredData, personData } from '@/components/StructuredData';
 
 export const metadata: Metadata = {
   title: 'Franck Petretto - Formateur IA Générative à Grenoble',
   description:
-    'Maîtrisez l\'IA au-delà du simple prompt. Expert en Intelligence Artificielle Générative, Microsoft Copilot, Copilot Studio et assistants de codage.',
+    'Masterclass IA et formation professionnelle en Intelligence Artificielle Générative. Expert en art du prompting, Microsoft Copilot (M365, Studio), agents IA et assistants de codage. Formations adaptées à tous niveaux à Grenoble et partout en France.',
   keywords: [
     'IA Générative',
     'Formation IA',
+    'Formation IA Générative',
+    'Masterclass IA',
     'Microsoft Copilot',
+    'Copilot M365',
+    'Copilot Studio',
+    'Art du Prompting',
+    'Prompt Engineering',
     'Prompting',
     'Grenoble',
     'Formateur IA',
+    'Agents IA',
+    'Assistants IA',
   ],
 };
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen">
+    <>
+      <StructuredData data={personData} />
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-50 via-white to-accent-50 py-16 md:py-24">
         <div className="container mx-auto px-4">
@@ -81,7 +92,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              Expertise en IA Générative
+              Expertise en IA Générative et Formation Professionnelle
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {EXPERT.domainesExpertise.map((domaine, index) => (
@@ -91,6 +102,100 @@ export default function HomePage() {
                 >
                   <p className="text-gray-800 font-semibold">{domaine}</p>
                 </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section SEO - Pourquoi choisir cette formation */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+              Formation IA Générative : Maîtrisez l'Intelligence Artificielle
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold text-primary-700 mb-4">
+                  🎓 Masterclass IA et Formation Professionnelle
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Nos <strong>formations en Intelligence Artificielle Générative</strong> couvrent 
+                  tous les aspects essentiels : de l'<strong>art du prompting</strong> au 
+                  <strong> prompt engineering avancé</strong>, en passant par la création 
+                  d'<strong>agents IA</strong> avec <strong>Copilot Studio</strong>.
+                </p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold text-primary-700 mb-4">
+                  🚀 Microsoft Copilot : Formation Complète
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Devenez expert <strong>Microsoft Copilot</strong> avec nos formations 
+                  sur <strong>Copilot M365</strong>, <strong>Microsoft Copilot Studio</strong>, 
+                  et la création d'<strong>assistants conversationnels</strong> personnalisés.
+                </p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold text-primary-700 mb-4">
+                  💻 GitHub Copilot et Assistants de Codage
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Pour les développeurs : maîtrisez <strong>GitHub Copilot</strong> et les 
+                  <strong> assistants de codage IA</strong> pour décupler votre productivité 
+                  et intégrer l'IA dans vos workflows de développement.
+                </p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold text-primary-700 mb-4">
+                  🎯 Formation IA à Grenoble et Partout en France
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Basé à <strong>Grenoble</strong>, je propose des <strong>formations IA</strong> en 
+                  présentiel dans toute la France et à distance. Des <strong>masterclass IA</strong> adaptées 
+                  à tous les niveaux, du débutant au développeur confirmé.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Mots-clés */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              Formations et Expertises
+            </h3>
+            <div className="flex flex-wrap justify-center gap-3 text-sm">
+              {[
+                'Formation IA',
+                'Formation IA Générative',
+                'Masterclass IA',
+                'Art du Prompting',
+                'Prompt Engineering',
+                'Microsoft Copilot',
+                'Copilot M365',
+                'Copilot Studio',
+                'Agents IA',
+                'Assistants IA',
+                'GitHub Copilot',
+                'Formation Copilot Studio',
+                'LLM',
+                'Intelligence Artificielle',
+                'Formation Grenoble',
+              ].map((keyword, index) => (
+                <span
+                  key={index}
+                  className="px-4 py-2 bg-primary-50 text-primary-800 rounded-full font-medium hover:bg-primary-100 transition-colors"
+                >
+                  {keyword}
+                </span>
               ))}
             </div>
           </div>
@@ -110,5 +215,6 @@ export default function HomePage() {
         </div>
       </section>
     </div>
+    </>
   );
 }
