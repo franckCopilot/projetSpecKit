@@ -3,7 +3,7 @@ import { Expert } from '@/types/expert';
 
 export const EXPERT: Expert = {
   nom: 'Franck Petretto',
-  photo: '/franck-petretto.jpg',
+  photo: '/franck.jpg',
   titre: 'Formateur en Intelligence Artificielle Générative',
   tagline: 'Maîtrisez l\'IA au-delà du simple prompt',
   sousTagline:
