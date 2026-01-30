@@ -8,7 +8,7 @@ export const EXPERT: Expert = {
   tagline: 'Maîtrisez l\'IA au-delà du simple prompt',
   sousTagline:
     'Expert en art du prompting, Microsoft Copilot, Copilot Studio et assistants de codage',
-  biographie: `Passionné par les technologies et l'innovation, Franck Petretto s'est spécialisé dans l'Intelligence Artificielle Générative et ses applications concrètes en entreprise.
+  biographie: `Passionné par les technologies et l'innovation, Franck s'est spécialisé dans l'Intelligence Artificielle Générative et ses applications concrètes en entreprise.
 
 Fort de nombreuses années d'expérience dans le domaine de la formation et de l'accompagnement digital, il aide les professionnels et les organisations à maîtriser les outils d'IA de nouvelle génération.
 
