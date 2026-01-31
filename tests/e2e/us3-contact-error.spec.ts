@@ -11,7 +11,7 @@ test.describe('User Story 3 - Failed Submission Error Handling', () => {
         body: JSON.stringify({
           success: false,
           error: 'Une erreur est survenue lors de l\'envoi du message.',
-          fallbackEmail: 'franck.petretto@free.fr',
+          fallbackEmail: 'contact.masterclass.ia@gmail.com',
         }),
       });
     });
@@ -32,7 +32,7 @@ test.describe('User Story 3 - Failed Submission Error Handling', () => {
     // Vérifier l'affichage de l'email alternatif (FR-021)
     // Utiliser .first() car l'email peut apparaître plusieurs fois (footer, erreur)
     await expect(
-      page.getByText(/franck\.petretto@free\.fr/i).first()
+      page.getByText(/contact\.masterclass\.ia@gmail\.com/i).first()
     ).toBeVisible();
   });
 
@@ -44,7 +44,7 @@ test.describe('User Story 3 - Failed Submission Error Handling', () => {
         body: JSON.stringify({
           success: false,
           error: 'Erreur serveur',
-          fallbackEmail: 'franck.petretto@free.fr',
+          fallbackEmail: 'contact.masterclass.ia@gmail.com',
         }),
       });
     });
@@ -60,10 +60,10 @@ test.describe('User Story 3 - Failed Submission Error Handling', () => {
     // L'email alternatif devrait être cliquable
     // Utiliser .first() car il peut y avoir plusieurs liens (footer, erreur)
     const emailLink = page.getByRole('link', {
-      name: /franck\.petretto@free\.fr/i,
+      name: /contact\.masterclass\.ia@gmail\.com/i,
     }).first();
     await expect(emailLink).toBeVisible();
-    await expect(emailLink).toHaveAttribute('href', 'mailto:franck.petretto@free.fr');
+    await expect(emailLink).toHaveAttribute('href', 'mailto:contact.masterclass.ia@gmail.com');
   });
 
   test('should allow retry after error', async ({ page }) => {
@@ -79,7 +79,7 @@ test.describe('User Story 3 - Failed Submission Error Handling', () => {
           body: JSON.stringify({
             success: false,
             error: 'Erreur temporaire',
-            fallbackEmail: 'franck.petretto@free.fr',
+            fallbackEmail: 'contact.masterclass.ia@gmail.com',
           }),
         });
       } else {

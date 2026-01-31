@@ -39,7 +39,7 @@
    - **Updated**: User Story 3, Acceptance Scenario 3 + new FR-020, FR-023, FR-024, FR-025
 
 2. **Q2 - Gestion des échecs d'envoi du formulaire**: ✅ RESOLVED
-   - **Answer**: Message d'erreur + suggestion de contact alternatif (affiche aussi l'email direct franck.petretto@free.fr)
+   - **Answer**: Message d'erreur + suggestion de contact alternatif (affiche aussi l'email direct contact.masterclass.ia@gmail.com)
    - **Updated**: Edge Cases section + new FR-021
 
 3. **Q3 - Contenu de la biographie**: ✅ RESOLVED
