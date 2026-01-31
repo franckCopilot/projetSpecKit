@@ -84,6 +84,9 @@ export default function RootLayout({
   return (
     <html lang="fr" className={inter.variable}>
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="32x32" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <StructuredData data={[organizationData, websiteData]} />
       </head>
       <body className="antialiased min-h-screen flex flex-col">
