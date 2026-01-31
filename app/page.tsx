@@ -6,7 +6,7 @@ import { Metadata } from 'next';
 import { StructuredData, personData } from '@/components/StructuredData';
 
 export const metadata: Metadata = {
-  title: 'Franck Petretto - Formateur IA Générative',
+  title: 'Masterclass IA - Formateur IA Générative',
   description:
     'Masterclass IA et formation professionnelle en Intelligence Artificielle Générative. Expert en art du prompting, Microsoft Copilot (M365, Studio), agents IA et assistants de codage. Formations adaptées à tous niveaux à Grenoble et partout en France.',
   keywords: [
