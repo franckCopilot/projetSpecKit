@@ -191,6 +191,6 @@ export const websiteData: WebSite = {
   name: 'Franck Petretto - Formation IA Générative',
   url: 'https://masterclass-ia.fr',
   description:
-    'Formations professionnelles en Intelligence Artificielle Générative à Grenoble',
+    'Formations professionnelles en Intelligence Artificielle Générative',
   inLanguage: 'fr-FR',
 };

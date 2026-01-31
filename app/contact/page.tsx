@@ -22,7 +22,7 @@ export default function ContactPage() {
             </h1>
             <p className="text-xl md:text-2xl text-primary-50 mb-4">
               Formation IA Générative, Masterclass Microsoft Copilot, 
-              Copilot Studio et Agents IA à Grenoble
+              Copilot Studio et Agents IA
             </p>
             <p className="text-lg text-primary-100">
               Une question sur nos formations en Intelligence Artificielle ? Un projet spécifique ? 

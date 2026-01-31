@@ -31,7 +31,7 @@ export default function AProposPage() {
             </p>
             <p className="text-lg text-gray-700">
               Expert en Formation IA Générative, Masterclass IA, Microsoft Copilot, 
-              Copilot Studio et Agents IA à Grenoble
+              Copilot Studio et Agents IA
             </p>
           </div>
         </div>

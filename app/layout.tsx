@@ -62,14 +62,14 @@ export const metadata: Metadata = {
     url: 'https://masterclass-ia.fr',
     title: 'Franck Petretto - Formateur IA Générative',
     description:
-      'Expert en Intelligence Artificielle Générative basé à Grenoble',
+      'Expert en Intelligence Artificielle Générative',
     siteName: 'Franck Petretto - Formation IA',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Franck Petretto - Formateur IA Générative',
     description:
-      'Expert en Intelligence Artificielle Générative basé à Grenoble',
+      'Expert en Intelligence Artificielle Générative',
   },
   alternates: {
     canonical: 'https://masterclass-ia.fr',
