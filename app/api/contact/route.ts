@@ -118,7 +118,7 @@ export async function POST(request: NextRequest) {
         success: false,
         error:
           'Une erreur inattendue est survenue. Veuillez réessayer plus tard.',
-        fallbackEmail: 'franck.petretto@free.fr',
+        fallbackEmail: 'contact.masterclass.ia@gmail.com',
       },
       { status: 500 }
     );

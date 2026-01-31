@@ -26,5 +26,5 @@ Sa spécialité : aller au-delà du simple prompt pour maîtriser l'art du promp
     'Large Language Models (LLM)',
     'Transformation Digitale avec l\'IA',
   ],
-  email: 'franck.petretto@free.fr',
+  email: 'contact.masterclass.ia@gmail.com',
 };

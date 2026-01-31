@@ -159,10 +159,10 @@ Le design respecte les critères "haut de gamme" avec :
 ## 📧 Contact
 
 Pour toute question concernant le code :
-- Email : [franck.petretto@free.fr](mailto:franck.petretto@free.fr)
+- Email : [contact.masterclass.ia@gmail.com](mailto:contact.masterclass.ia@gmail.com)
 
 Pour les formations en IA Générative :
-- Site : [https://franck-petretto.fr](https://franck-petretto.fr)
+- Site : [contact.masterclass.ia@gmail.com](https://franck-petretto.fr)
 
 ## 📄 License
 

@@ -124,10 +124,10 @@ export default function MerciPage() {
         <p className="mt-12 text-sm text-gray-500">
           Un problème avec votre demande ? Contactez-moi directement à{' '}
           <a
-            href="mailto:franck.petretto@free.fr"
+            href="mailto:contact.masterclass.ia@gmail.com"
             className="text-primary-600 hover:text-primary-700 font-semibold"
           >
-            franck.petretto@free.fr
+            contact.masterclass.ia@gmail.com
           </a>
         </p>
       </div>

@@ -56,7 +56,7 @@ export default function ContactForm() {
       setSubmitError(
         'Impossible de contacter le serveur. Veuillez réessayer plus tard.'
       );
-      setFallbackEmail('franck.petretto@free.fr');
+      setFallbackEmail('contact.masterclass.ia@gmail.com');
     } finally {
       setIsSubmitting(false);
     }

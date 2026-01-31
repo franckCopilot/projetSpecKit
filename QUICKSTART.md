@@ -118,4 +118,4 @@ export const OFFRES: OffreFormation[] = [
 
 ## Support
 
-Pour toute question : franck.petretto@free.fr
+Pour toute question : contact.masterclass.ia@gmail.com
