@@ -33,21 +33,23 @@ export default function HomePage() {
       <StructuredData data={personData} />
       <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-50 via-white to-accent-50 py-16 md:py-24">
+      <section className="bg-gradient-to-br from-blue-50 via-blue-100 to-purple-100 py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* Photo */}
               <div className="flex justify-center md:justify-end order-1 md:order-2">
-                <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl ring-4 ring-primary-200">
-                  <Image
-                    src={EXPERT.photo}
-                    alt={`Photo de ${EXPERT.nom}, ${EXPERT.titre}`}
-                    fill
-                    className="object-cover"
-                    priority
-                    sizes="(max-width: 768px) 256px, 320px"
-                  />
+                <div className="relative p-1 rounded-full bg-gradient-to-r from-blue-600 to-purple-600">
+                  <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl bg-white">
+                    <Image
+                      src={EXPERT.photo}
+                      alt={`Photo de ${EXPERT.nom}, ${EXPERT.titre}`}
+                      fill
+                      className="object-cover"
+                      priority
+                      sizes="(max-width: 768px) 256px, 320px"
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -59,7 +61,7 @@ export default function HomePage() {
                 <p className="text-xl md:text-2xl text-gray-700 font-medium mb-2">
                   {EXPERT.titre}
                 </p>
-                <p className="text-2xl md:text-3xl font-bold text-primary-700 mb-6 leading-snug">
+                <p className="text-2xl md:text-3xl font-bold mb-6 leading-snug bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
                   {EXPERT.tagline}
                 </p>
                 <p className="text-lg md:text-xl text-gray-600 mb-8">
