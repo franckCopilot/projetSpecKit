@@ -11,9 +11,9 @@ test.describe('User Story 2 - Filtering by Public Cible', () => {
     const debutantOffres = page.getByText(/débutant/i);
     await expect(debutantOffres.first()).toBeVisible();
 
-    // Devrait afficher "Sensibilisation à l'IA Générative" (débutant)
+    // Devrait afficher "Découvrir l'IA Générative" (débutant)
     await expect(
-      page.getByText(/sensibilisation à l'ia générative/i)
+      page.getByText(/découvrir l'ia générative/i)
     ).toBeVisible();
   });
 

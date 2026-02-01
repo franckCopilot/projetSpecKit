@@ -1,5 +1,5 @@
 // types/developpement.ts
-export type TypeOffreDev = 'pack' | 'support';
+export type TypeOffreDev = 'pack' | 'support' | 'agent-ia';
 
 export interface OffreDeveloppement {
   id: string;

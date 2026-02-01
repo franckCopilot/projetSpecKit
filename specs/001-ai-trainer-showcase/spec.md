@@ -34,7 +34,7 @@ Un prospect qualifié souhaite consulter les différentes offres de formation po
 **Acceptance Scenarios**:
 
 1. **Given** un prospect consulte la page "Services & Offres", **When** il lit le contenu, **Then** il voit 5 offres distinctes listées avec leur intitulé exact, leur public cible, et leur prix
-2. **Given** un prospect cherche une formation pour débutants, **When** il consulte les offres, **Then** il identifie facilement 3 offres marquées "débutant" : Sensibilisation à l'IA Générative (400€), Maîtriser l'art de la rédaction de prompts avec Microsoft Copilot (400€), et Formateur Microsoft Copilot (chat et Copilot dans M365 apps) (400€)
+2. **Given** un prospect cherche une formation pour débutants, **When** il consulte les offres, **Then** il identifie facilement 3 offres marquées "débutant" : Découvrir l'IA Générative (400€), Maîtriser l'art de la rédaction de prompts avec Microsoft Copilot (400€), et Formateur Microsoft Copilot (chat et Copilot dans M365 apps) (400€)
 3. **Given** un prospect est développeur confirmé, **When** il consulte les offres, **Then** il identifie l'offre "Intégrer l'IA dans le cycle de développement et les assistants de codage" pour confirmés/développeurs à 600€
 4. **Given** un prospect s'intéresse à la création d'agents IA, **When** il consulte les offres, **Then** il identifie l'offre "Formateur Microsoft Copilot Studio (création d'agents)" pour niveau intermédiaire à 500€
 
@@ -86,7 +86,7 @@ Un prospect intéressé par une ou plusieurs offres souhaite contacter Franck Pe
 **Page Services & Offres (Pricing)**
 
 - **FR-009**: Le site DOIT avoir une page "Services & Offres" ou "Pricing" listant les offres de formation
-- **FR-010**: La page Services DOIT afficher l'offre "Sensibilisation à l'IA Générative" avec le public cible "débutant" et le prix "400 €"
+- **FR-010**: La page Services DOIT afficher l'offre "Découvrir l'IA Générative" avec le public cible "débutant" et le prix "400 €"
 - **FR-011**: La page Services DOIT afficher l'offre "Maîtriser l'art de la rédaction de prompts avec Microsoft Copilot" avec le public cible "débutant" et le prix "400 €"
 - **FR-012**: La page Services DOIT afficher l'offre "Formateur Microsoft Copilot (chat et Copilot dans M365 apps)" avec le public cible "débutant/intermédiaire" et le prix "400 €"
 - **FR-013**: La page Services DOIT afficher l'offre "Formateur Microsoft Copilot Studio (création d'agents)" avec le public cible "intermédiaire" et le prix "500 €"

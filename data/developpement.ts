@@ -3,6 +3,31 @@ import { OffreDeveloppement } from '@/types/developpement';
 
 export const OFFRES_DEV: OffreDeveloppement[] = [
   {
+    id: 'agent-ia-personnalise',
+    titre: 'Développement d\'Agent Intelligence Artificielle',
+    type: 'agent-ia',
+    prix: 490,
+    description:
+      'Conception et développement d\'agents IA personnalisés avec Copilot Studio (Microsoft) ou solutions sur mesure. Créez un assistant conversationnel intelligent adapté à vos besoins métier.',
+    delai: '2 à 4 semaines',
+    inclus: [
+      'Analyse de vos besoins et cas d\'usage',
+      'Développement sur Copilot Studio, ChatGPT ou Gemini',
+      'Agent IA conversationnel personnalisé',
+      'Intégration avec vos données et systèmes',
+      'Formation à l\'administration et configuration',
+      'Documentation technique complète',
+      '1 mois de support post-déploiement',
+      'Déploiement et mise en production',
+    ],
+    langages: [
+      'Microsoft Copilot Studio',
+      'OpenAI ChatGPT API',
+      'Google Gemini API',
+      'Solutions sur mesure (Python, Node.js)',
+    ],
+  },
+  {
     id: 'pack-site-vitrine',
     titre: 'Pack Site Vitrine Professionnel',
     type: 'pack',

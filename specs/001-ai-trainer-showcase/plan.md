@@ -638,7 +638,7 @@ test('Edge Case: Affiche email alternatif si envoi échoue (FR-021)', async ({ p
 
 **Page Services & Offres**
 - [ ] FR-009 : Page "Services & Offres" existe
-- [ ] FR-010 : Offre "Sensibilisation à l'IA Générative" | débutant | 400 €
+- [ ] FR-010 : Offre "Découvrir l'IA Générative" | débutant | 400 €
 - [ ] FR-011 : Offre "Maîtriser l'art de la rédaction de prompts avec Microsoft Copilot" | débutant | 400 €
 - [ ] FR-012 : Offre "Formateur Microsoft Copilot (chat et M365 apps)" | débutant/intermédiaire | 400 €
 - [ ] FR-013 : Offre "Formateur Microsoft Copilot Studio (création d'agents)" | intermédiaire | 500 €

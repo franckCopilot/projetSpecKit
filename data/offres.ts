@@ -4,7 +4,7 @@ import { OffreFormation } from '@/types/offre';
 export const OFFRES: OffreFormation[] = [
   {
     id: 'offre-sensibilisation-ia',
-    titre: 'Sensibilisation à l\'IA Générative',
+    titre: 'Découvrir l\'IA Générative',
     publicCible: 'débutant',
     prix: 390,
     description:
@@ -63,7 +63,7 @@ export const OFFRES: OffreFormation[] = [
     titre:
       'Formation Assistants de Codage et IA pour Développeurs',
     publicCible: 'confirmé/développeur',
-    prix: 1499,
+    prix: 1490,
     description:
       'Formation complète pour développeurs : maîtrisez GitHub Copilot et les assistants de codage IA. Intégrez l\'Intelligence Artificielle dans vos workflows de développement avec VS Code, GitHub Copilot, et autres outils IA pour coder plus efficacement.',
     duree: '3 jours',

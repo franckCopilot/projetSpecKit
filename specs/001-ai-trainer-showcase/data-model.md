@@ -67,7 +67,7 @@ export interface OffreFormation {
 export const OFFRES: OffreFormation[] = [
   {
     id: 'offre-sensibilisation-ia',
-    titre: 'Sensibilisation à l'IA Générative',
+    titre: 'Découvrir l\'IA Générative',
     publicCible: 'débutant',
     prix: 400,
     description: 'Découvrez les fondamentaux de l'IA Générative et ses applications pratiques.'

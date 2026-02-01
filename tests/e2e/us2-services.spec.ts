@@ -13,7 +13,7 @@ test.describe('User Story 2 - Services Display', () => {
 
     // Vérifier que les 5 offres sont affichées avec les bons titres
     const offres = [
-      /sensibilisation à l'ia générative/i,
+      /découvrir l'ia générative/i,
       /maîtriser l'art de la rédaction de prompts/i,
       /formateur microsoft copilot.*m365/i,
       /formateur microsoft copilot studio/i,
@@ -30,8 +30,8 @@ test.describe('User Story 2 - Services Display', () => {
   }) => {
     await page.goto('/services');
 
-    // Test offre 1 : Sensibilisation à l'IA Générative
-    const offre1 = page.getByText(/sensibilisation à l'ia générative/i);
+    // Test offre 1 : Découvrir l'IA Générative
+    const offre1 = page.getByText(/découvrir l'ia générative/i);
     await expect(offre1).toBeVisible();
     await expect(page.getByText(/débutant/i).first()).toBeVisible();
     await expect(page.getByText(/400\s*€/i).first()).toBeVisible();
