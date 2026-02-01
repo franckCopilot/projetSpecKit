@@ -20,6 +20,7 @@ test.describe('User Story 3 - Failed Submission Error Handling', () => {
 
     await page.getByLabel(/nom/i).fill('Test User');
     await page.getByLabel(/email/i).fill('test@example.com');
+    await page.getByLabel(/sujet/i).selectOption('Formation IA Générative et masterclass IA');
     await page.getByLabel(/message/i).fill('Message de test pour erreur');
 
     await page.getByRole('button', { name: /envoyer/i }).click();
@@ -53,6 +54,7 @@ test.describe('User Story 3 - Failed Submission Error Handling', () => {
 
     await page.getByLabel(/nom/i).fill('Error Test');
     await page.getByLabel(/email/i).fill('error@example.com');
+    await page.getByLabel(/sujet/i).selectOption('Autre demande');
     await page.getByLabel(/message/i).fill('Test error handling');
 
     await page.getByRole('button', { name: /envoyer/i }).click();
@@ -99,6 +101,7 @@ test.describe('User Story 3 - Failed Submission Error Handling', () => {
 
     await page.getByLabel(/nom/i).fill('Retry Test');
     await page.getByLabel(/email/i).fill('retry@example.com');
+    await page.getByLabel(/sujet/i).selectOption('Développement Web');
     await page.getByLabel(/message/i).fill('Test retry functionality');
 
     // Première soumission (échoue)

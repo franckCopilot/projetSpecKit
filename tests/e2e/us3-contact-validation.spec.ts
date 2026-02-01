@@ -13,6 +13,7 @@ test.describe('User Story 3 - Contact Form Validation', () => {
       page.getByText(/le nom doit contenir au moins 2 caractères/i)
     ).toBeVisible();
     await expect(page.getByText(/adresse email invalide/i)).toBeVisible();
+    await expect(page.getByText(/veuillez sélectionner un sujet/i)).toBeVisible();
     await expect(
       page.getByText(/le message doit contenir au moins 10 caractères/i)
     ).toBeVisible();
@@ -47,6 +48,7 @@ test.describe('User Story 3 - Contact Form Validation', () => {
 
     await page.getByLabel(/nom/i).fill('A'); // Trop court (< 2)
     await page.getByLabel(/email/i).fill('test@example.com');
+    await page.getByLabel(/sujet/i).selectOption('Formation IA Générative et masterclass IA');
     await page.getByLabel(/message/i).fill('Message valide');
 
     await page.getByRole('button', { name: /envoyer/i }).click();
@@ -61,6 +63,7 @@ test.describe('User Story 3 - Contact Form Validation', () => {
 
     await page.getByLabel(/nom/i).fill('Jean Dupont');
     await page.getByLabel(/email/i).fill('test@example.com');
+    await page.getByLabel(/sujet/i).selectOption('Formation IA Générative et masterclass IA');
     await page.getByLabel(/message/i).fill('Court'); // < 10 caractères
 
     await page.getByRole('button', { name: /envoyer/i }).click();

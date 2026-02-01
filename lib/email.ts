@@ -60,6 +60,9 @@ export async function sendContactEmail({
                   <p><span class="label">Email :</span> <a href="mailto:${from.email}">${from.email}</a></p>
                 </div>
                 <div class="info-block">
+                  <p><span class="label">Sujet :</span> ${from.sujet}</p>
+                </div>
+                <div class="info-block">
                   <p><span class="label">Message :</span></p>
                   <p style="white-space: pre-wrap; margin-top: 10px;">${from.message}</p>
                 </div>
@@ -76,8 +79,7 @@ export async function sendContactEmail({
 Nouveau message de contact
 
 Nom: ${from.nom}
-Email: ${from.email}
-
+Email: ${from.email}Sujet: ${from.sujet}
 Message:
 ${from.message}
 

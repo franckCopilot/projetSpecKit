@@ -23,6 +23,7 @@ test.describe('User Story 3 - Successful Form Submission', () => {
     // Remplir le formulaire avec des données valides
     await page.getByLabel(/nom/i).fill('Jean Dupont');
     await page.getByLabel(/email/i).fill('jean.dupont@example.com');
+    await page.getByLabel(/sujet/i).selectOption('Formation IA Générative et masterclass IA');
     await page
       .getByLabel(/message/i)
       .fill(
@@ -97,6 +98,7 @@ test.describe('User Story 3 - Successful Form Submission', () => {
 
     await nomInput.fill('Pierre Dubois');
     await emailInput.fill('pierre.dubois@example.com');
+    await page.getByLabel(/sujet/i).selectOption('Développement Web');
     await messageInput.fill('Message de test pour la soumission.');
 
     await page.getByRole('button', { name: /envoyer/i }).click();

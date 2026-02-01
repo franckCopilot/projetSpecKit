@@ -41,19 +41,8 @@ export default function ContactPage() {
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   Envoyez-moi un message pour votre Formation IA
                 </h2>
-                <p className="text-gray-600 mb-4">
-                  Remplissez le formulaire ci-dessous pour toute demande concernant :
-                </p>
-                <ul className="text-gray-600 space-y-1 mb-4">
-                  <li>• <strong>Formation IA Générative</strong> et masterclass IA</li>
-                  <li>• <strong>Formation Microsoft Copilot</strong> (M365, Studio)</li>
-                  <li>• <strong>Copilot Studio</strong> et création d'<strong>agents IA</strong></li>
-                  <li>• <strong>Art du prompting</strong> et prompt engineering</li>
-                  <li>• <strong>GitHub Copilot</strong> et assistants de codage</li>
-                  <li>• Formation personnalisée ou en groupe</li>
-                </ul>
                 <p className="text-gray-600">
-                  Je reviendrai vers vous dans les plus brefs délais pour discuter 
+                  Remplissez le formulaire ci-dessous. Je reviendrai vers vous dans les plus brefs délais pour discuter 
                   de votre projet de formation en Intelligence Artificielle.
                 </p>
               </div>

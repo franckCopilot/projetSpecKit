@@ -117,6 +117,37 @@ export default function ContactForm() {
         )}
       </div>
 
+      {/* Sujet */}
+      <div>
+        <label
+          htmlFor="sujet"
+          className="block text-sm font-semibold text-gray-700 mb-2"
+        >
+          Sujet de votre demande <span className="text-red-600">*</span>
+        </label>
+        <select
+          id="sujet"
+          {...register('sujet')}
+          className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors ${
+            errors.sujet ? 'border-red-500' : 'border-gray-300'
+          }`}
+        >
+          <option value="">Sélectionnez un sujet</option>
+          <option value="Découvrir l'IA Générative">Découvrir l&apos;IA Générative</option>
+          <option value="Maîtriser l'art de la rédaction de prompts avec Microsoft Copilot">Maîtriser l&apos;art de la rédaction de prompts avec Microsoft Copilot</option>
+          <option value="Formation Microsoft Copilot M365">Formation Microsoft Copilot M365</option>
+          <option value="Formation Microsoft Copilot Studio">Formation Microsoft Copilot Studio</option>
+          <option value="Formation Assistants de Codage et IA pour Développeurs">Formation Assistants de Codage et IA pour Développeurs</option>
+          <option value="Développement d'Agent IA">Développement d&apos;Agent IA</option>
+          <option value="Pack Site Vitrine Professionnel">Pack Site Vitrine Professionnel</option>
+          <option value="Support Technique & Correction de Bugs">Support Technique & Correction de Bugs</option>
+          <option value="Autre demande">Autre demande</option>
+        </select>
+        {errors.sujet && (
+          <p className="mt-2 text-sm text-red-600">{errors.sujet.message}</p>
+        )}
+      </div>
+
       {/* Message */}
       <div>
         <label

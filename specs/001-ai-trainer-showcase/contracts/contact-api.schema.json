@@ -35,6 +35,22 @@
           "description": "Valid email address (FR-019)",
           "example": "jean.dupont@example.com"
         },
+        "sujet": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Subject of the inquiry - dropdown selection",
+          "enum": [
+            "Formation IA Générative et masterclass IA",
+            "Formation Microsoft Copilot (M365, Studio)",
+            "Copilot Studio et création d'agents IA",
+            "Art du prompting et prompt engineering",
+            "GitHub Copilot et assistants de codage",
+            "Formation personnalisée ou en groupe",
+            "Développement Web",
+            "Autre demande"
+          ],
+          "example": "Formation IA Générative et masterclass IA"
+        },
         "message": {
           "type": "string",
           "minLength": 10,
@@ -43,7 +59,7 @@
           "example": "Je souhaiterais obtenir plus d'informations sur la formation Microsoft Copilot Studio."
         }
       },
-      "required": ["nom", "email", "message"],
+      "required": ["nom", "email", "sujet", "message"],
       "additionalProperties": false
     }
   },
@@ -100,6 +116,11 @@
                 "type": "array",
                 "items": { "type": "string" },
                 "example": ["Adresse email invalide"]
+              },
+              "sujet": {
+                "type": "array",
+                "items": { "type": "string" },
+                "example": ["Veuillez sélectionner un sujet"]
               },
               "message": {
                 "type": "array",
@@ -207,6 +228,7 @@
         "body": {
           "nom": "Marie Martin",
           "email": "marie.martin@entreprise.fr",
+          "sujet": "Copilot Studio et création d'agents IA",
           "message": "Bonjour, je suis intéressée par la formation sur Microsoft Copilot Studio pour créer des agents IA. Pourriez-vous me fournir plus de détails sur le programme et les dates disponibles ?"
         }
       },
@@ -230,6 +252,7 @@
         "body": {
           "nom": "A",
           "email": "invalid-email",
+          "sujet": "",
           "message": "Court"
         }
       },
@@ -241,6 +264,7 @@
           "details": {
             "nom": ["Le nom doit contenir au moins 2 caractères"],
             "email": ["Adresse email invalide"],
+            "sujet": ["Veuillez sélectionner un sujet"],
             "message": ["Le message doit contenir au moins 10 caractères"]
           }
         }
@@ -257,6 +281,7 @@
         "body": {
           "nom": "Pierre Dubois",
           "email": "pierre.dubois@example.com",
+          "sujet": "Développement Web",
           "message": "Message de test pour vérifier l'envoi d'email."
         }
       },
