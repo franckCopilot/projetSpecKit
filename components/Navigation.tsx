@@ -10,6 +10,7 @@ export default function Navigation() {
     { href: '/', label: 'Accueil' },
     { href: '/a-propos', label: 'À propos' },
     { href: '/services', label: 'Services & Offres' },
+    { href: '/developpement-web', label: 'Développement Web' },
     { href: '/contact', label: 'Contact' },
   ];
 

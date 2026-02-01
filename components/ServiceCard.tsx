@@ -5,16 +5,22 @@ interface ServiceCardProps {
   offre: OffreFormation;
 }
 
-// Fonction pour obtenir la couleur basée sur le niveau
-function getPublicCibleColor(publicCible: string): string {
+// Fonction pour obtenir la couleur du gradient basée sur le niveau
+function getPublicCibleGradient(publicCible: string): string {
+  // Toutes les offres utilisent le gradient violet
+  return 'bg-gradient-to-r from-purple-500 to-violet-600';
+}
+
+// Fonction pour obtenir la couleur du badge basée sur le niveau
+function getPublicCibleBadgeColor(publicCible: string): string {
   if (publicCible.includes('débutant')) {
-    return 'bg-green-100 text-green-800 border-green-300';
-  } else if (publicCible.includes('intermédiaire')) {
-    return 'bg-blue-100 text-blue-800 border-blue-300';
+    return 'bg-green-100 text-green-800 border border-green-300';
+  } else if (publicCible.includes('intermédiaire') && !publicCible.includes('débutant')) {
+    return 'bg-blue-100 text-blue-800 border border-blue-300';
   } else if (publicCible.includes('confirmé') || publicCible.includes('développeur')) {
-    return 'bg-purple-100 text-purple-800 border-purple-300';
+    return 'bg-pink-100 text-pink-800 border border-pink-300';
   }
-  return 'bg-gray-100 text-gray-800 border-gray-300';
+  return 'bg-gray-100 text-gray-800 border border-gray-300';
 }
 
 export default function ServiceCard({ offre }: ServiceCardProps) {
@@ -23,31 +29,26 @@ export default function ServiceCard({ offre }: ServiceCardProps) {
       data-testid="service-card"
       className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-gray-200 overflow-hidden h-full flex flex-col"
     >
-      {/* En-tête avec badge niveau */}
-      <div className="bg-gradient-to-br from-primary-50 to-accent-50 p-6 pb-4">
-        <div className="flex justify-between items-start mb-3">
-          <span
-            className={`px-3 py-1 rounded-full text-sm font-semibold border ${getPublicCibleColor(
-              offre.publicCible
-            )}`}
-          >
+      {/* En-tête avec gradient coloré */}
+      <div className={`${getPublicCibleGradient(offre.publicCible)} text-white p-6`}>
+        <div className="flex items-center justify-between mb-2">
+          <span className={`text-sm font-semibold px-3 py-1 rounded-full ${getPublicCibleBadgeColor(offre.publicCible)}`}>
             {offre.publicCible.charAt(0).toUpperCase() +
               offre.publicCible.slice(1)}
           </span>
           {offre.duree && (
-            <span className="text-sm text-gray-600 bg-white px-3 py-1 rounded-full">
+            <span className="text-sm bg-white/20 px-3 py-1 rounded-full">
               📅 {offre.duree}
             </span>
           )}
         </div>
+        <h3 className="text-2xl font-bold">
+          {offre.titre}
+        </h3>
       </div>
 
       {/* Contenu */}
       <div className="p-6 flex-1 flex flex-col">
-        <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight">
-          {offre.titre}
-        </h3>
-
         {offre.description && (
           <p className="text-gray-700 mb-4 leading-relaxed flex-1">
             {offre.description}
