@@ -6,11 +6,15 @@ import { Metadata } from 'next';
 import { StructuredData, personData } from '@/components/StructuredData';
 
 export const metadata: Metadata = {
-  title: 'Masterclass IA - Formateur IA Générative',
+  title: 'Formateur IA à Grenoble | Franck Petretto | Expert IA Générative',
   description:
-    'Masterclass IA et formation professionnelle en Intelligence Artificielle Générative. Expert en art du prompting, Microsoft Copilot (M365, Studio), agents IA et assistants de codage. Formations adaptées à tous niveaux à Grenoble et partout en France.',
+    'Formateur IA professionnel spécialisé en Intelligence Artificielle Générative. Formateur expert Microsoft Copilot, Copilot Studio, art du prompting et GitHub Copilot. Masterclass IA et formations à Grenoble et partout en France.',
   keywords: [
-    'IA Générative',
+    'Formateur IA',
+    'Formateur IA Grenoble',
+    'Formateur IA Générative',
+    'Formateur Intelligence Artificielle',
+    'Expert IA',
     'Formation IA',
     'Formation IA Générative',
     'Masterclass IA',
@@ -21,7 +25,6 @@ export const metadata: Metadata = {
     'Prompt Engineering',
     'Prompting',
     'Grenoble',
-    'Formateur IA',
     'Agents IA',
     'Assistants IA',
   ],
@@ -94,7 +97,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              Expertise en IA Générative et Formation Professionnelle
+              Formateur IA Expert : Spécialiste IA Générative
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {EXPERT.domainesExpertise.map((domaine, index) => (
@@ -176,21 +179,21 @@ export default function HomePage() {
             </h3>
             <div className="flex flex-wrap justify-center gap-3 text-sm">
               {[
+                'Formateur IA',
+                'Formateur IA Générative',
+                'Formateur Grenoble',
                 'Formation IA',
                 'Formation IA Générative',
                 'Masterclass IA',
                 'Art du Prompting',
                 'Prompt Engineering',
-                'Microsoft Copilot',
+                'Formateur Microsoft Copilot',
                 'Copilot M365',
                 'Copilot Studio',
-                'Agents IA',
-                'Assistants IA',
-                'GitHub Copilot',
-                'Formation Copilot Studio',
+                'Formateur Agents IA',
+                'Formateur GitHub Copilot',
                 'LLM',
                 'Intelligence Artificielle',
-                'Formation Grenoble',
               ].map((keyword, index) => (
                 <span
                   key={index}

@@ -4,13 +4,15 @@ import { EXPERT } from '@/data/expert';
 import { createMetadata } from '@/lib/metadata';
 
 export const metadata = createMetadata({
-  title: 'À propos',
-  description: `Découvrez ${EXPERT.nom}, expert en IA Générative basé à ${EXPERT.localisation}. ${EXPERT.tagline}`,
+  title: 'À propos du Formateur IA | Franck Petretto',
+  description: `Découvrez ${EXPERT.nom}, formateur IA professionnel et expert en IA Générative basé à ${EXPERT.localisation}. Formateur spécialisé Microsoft Copilot, Copilot Studio et GitHub Copilot.`,
   keywords: [
+    'Formateur IA',
     'À propos',
     'Biographie',
     'Expert IA',
-    'Formateur',
+    'Formateur professionnel',
+    'Formateur IA Grenoble',
     EXPERT.localisation,
   ],
   canonicalPath: '/a-propos',
@@ -24,14 +26,14 @@ export default function AProposPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              À propos de {EXPERT.nom}
+              {EXPERT.nom}
             </h1>
             <p className="text-xl md:text-2xl text-primary-700 font-semibold mb-4">
               {EXPERT.tagline}
             </p>
             <p className="text-lg text-gray-700">
-              Expert en Formation IA Générative, Masterclass IA, Microsoft Copilot, 
-              Copilot Studio et Agents IA
+              Formateur IA Expert spécialisé en Formation IA Générative, Masterclass IA, 
+              Microsoft Copilot, Copilot Studio et Agents IA
             </p>
           </div>
         </div>
@@ -69,7 +71,7 @@ export default function AProposPage() {
                 {/* Domaines d'Expertise */}
                 <div className="mt-8">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    Domaines d'Expertise : Formation IA et Masterclass
+                    Formateur IA : Mes Domaines d'Expertise
                   </h3>
                   <div className="grid sm:grid-cols-2 gap-3">
                     {EXPERT.domainesExpertise.map((domaine, index) => (
@@ -99,21 +101,21 @@ export default function AProposPage() {
                 {/* Compétences SEO */}
                 <div className="mt-8 bg-white p-6 rounded-xl shadow-md">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    🎯 Formation IA à Grenoble et Partout en France
+                    🎯 Formateur IA à Grenoble et Partout en France
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Située au cœur des Alpes françaises, <strong>Grenoble</strong> est un pôle
-                    d'excellence en matière de technologies et d'innovation.
-                    Cette position privilégiée au sein de l'écosystème
-                    technologique français me permet de combiner une expertise
-                    de pointe avec une approche locale et personnalisée.
+                    En tant que <strong>formateur IA basé à Grenoble</strong>, au cœur des Alpes 
+                    françaises et d'un pôle d'excellence technologique, je bénéficie d'une position 
+                    privilégiée au sein de l'écosystème d'innovation français. Cette expertise locale 
+                    me permet de proposer des <strong>formations IA professionnelles</strong> de 
+                    haute qualité avec une approche personnalisée.
                   </p>
                   <p className="text-gray-700 leading-relaxed mt-3">
-                    Que vous soyez en région <strong>Auvergne-Rhône-Alpes</strong> ou partout en
-                    France, je propose des <strong>formations IA en présentiel</strong> et 
-                    <strong> à distance</strong> (visioconférence) pour répondre à vos besoins. 
-                    Mes <strong>masterclass IA</strong> et formations professionnelles s'adaptent 
-                    à votre organisation.
+                    <strong>Formateur IA expérimenté</strong>, j'interviens en région 
+                    <strong>Auvergne-Rhône-Alpes</strong> et partout en France, en <strong>présentiel</strong> 
+                    ou <strong>à distance</strong> (visioconférence). Mes <strong>masterclass IA</strong> et 
+                    <strong> formations professionnelles en Intelligence Artificielle</strong> s'adaptent 
+                    aux besoins spécifiques de chaque organisation.
                   </p>
                 </div>
               </div>
@@ -126,11 +128,12 @@ export default function AProposPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Prêt à maîtriser l'IA Générative et Microsoft Copilot ?
+            Formateur IA : Prêt à maîtriser l'IA Générative ?
           </h2>
           <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Découvrez mes formations adaptées à tous niveaux : <strong>formation IA</strong>, 
-            <strong> masterclass sur l'art du prompting</strong>, <strong>Microsoft Copilot M365</strong>, 
+            En tant que <strong>formateur IA professionnel</strong>, je propose des formations 
+            adaptées à tous niveaux : <strong>formation IA</strong>, <strong>masterclass sur l'art 
+            du prompting</strong>, <strong>formation Microsoft Copilot M365</strong>, 
             <strong> Copilot Studio</strong>, <strong>agents IA</strong> et <strong>GitHub Copilot</strong>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

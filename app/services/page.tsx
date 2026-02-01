@@ -5,15 +5,16 @@ import { createMetadata } from '@/lib/metadata';
 import { StructuredData, serviceData } from '@/components/StructuredData';
 
 export const metadata = createMetadata({
-  title: 'Services & Offres de Formation',
+  title: 'Formations IA | Formateur IA Expert | Grenoble',
   description:
-    '5 formations en IA Générative adaptées à tous les niveaux : débutant, intermédiaire, confirmé. Microsoft Copilot, Prompting, Copilot Studio, Assistants de codage.',
+    'Formateur IA professionnel proposant 5 formations en IA Générative : Microsoft Copilot, Copilot Studio, Art du Prompting, GitHub Copilot. Formateur expert basé à Grenoble.',
   keywords: [
+    'Formateur IA',
     'Formation IA',
-    'Microsoft Copilot',
-    'Copilot Studio',
-    'Prompting',
-    'Tarifs',
+    'Formateur Microsoft Copilot',
+    'Formateur Copilot Studio',
+    'Formateur Prompting',
+    'Formateur IA Grenoble',
   ],
   canonicalPath: '/services',
 });
@@ -28,15 +29,15 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Formations IA Générative et Microsoft Copilot
+              Formateur IA : Formations IA Générative et Microsoft Copilot
             </h1>
             <p className="text-xl md:text-2xl text-primary-50 leading-relaxed mb-4">
-              Masterclass IA, Formation Copilot Studio, Art du Prompting et Agents IA
+              Formateur expert en Masterclass IA, Copilot Studio, Art du Prompting et Agents IA
             </p>
             <p className="text-lg text-primary-100 leading-relaxed">
-              Des formations professionnelles adaptées à tous les niveaux : du débutant 
-              souhaitant découvrir l'IA Générative aux développeurs experts cherchant à 
-              maîtriser GitHub Copilot et les assistants de codage IA.
+              <strong>Formateur IA professionnel</strong> proposant des formations adaptées à tous 
+              les niveaux : du débutant souhaitant découvrir l'IA Générative aux développeurs 
+              experts cherchant à maîtriser GitHub Copilot et les assistants de codage IA.
             </p>
           </div>
         </div>
@@ -49,14 +50,14 @@ export default function ServicesPage() {
             {/* Introduction SEO */}
             <div className="mb-12 text-center max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Nos Formations en Intelligence Artificielle Générative
+                Formateur IA : Catalogue de Formations en Intelligence Artificielle
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Que vous recherchiez une <strong>formation IA pour débutants</strong>, 
-                une <strong>masterclass sur l'art du prompting</strong>, une 
-                <strong> formation Microsoft Copilot M365</strong>, ou encore une 
-                <strong> formation Copilot Studio pour créer des agents IA</strong>, 
-                nous avons le programme adapté à vos besoins.
+                En tant que <strong>formateur IA professionnel</strong>, je propose un catalogue 
+                complet de formations : <strong>formation IA pour débutants</strong>, 
+                <strong>masterclass sur l'art du prompting</strong>, <strong>formation Microsoft 
+                Copilot M365</strong>, et <strong>formation Copilot Studio pour créer des agents IA</strong>. 
+                Chaque formation est conçue pour répondre à vos besoins spécifiques.
               </p>
             </div>
 
@@ -102,12 +103,12 @@ export default function ServicesPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Une question sur nos formations IA ?
+            Besoin d'un formateur IA pour votre équipe ?
           </h2>
           <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Besoin d'une <strong>formation Microsoft Copilot</strong>, 
-            d'apprendre l'<strong>art du prompting</strong>, ou de créer 
-            des <strong>agents IA avec Copilot Studio</strong> ? 
+            En tant que <strong>formateur IA professionnel</strong>, je vous accompagne dans 
+            la montée en compétences de vos équipes : <strong>formation Microsoft Copilot</strong>, 
+            <strong>art du prompting</strong>, <strong>agents IA avec Copilot Studio</strong>. 
             Contactez-moi pour trouver la formation adaptée à votre projet.
           </p>
           <a

@@ -16,11 +16,14 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://masterclass-ia.fr'),
-  title: 'Franck Petretto - Formateur IA Générative',
+  title: 'Formateur IA | Franck Petretto | Expert IA Générative Grenoble',
   description:
-    'Masterclass IA et formation professionnelle en Intelligence Artificielle Générative. Expert en art du prompting, Microsoft Copilot (M365, Studio), Copilot Studio, agents IA et GitHub Copilot. Formations à Grenoble et partout en France.',
+    'Formateur IA spécialisé en Intelligence Artificielle Générative. Expert en Microsoft Copilot, Copilot Studio, art du prompting et GitHub Copilot. Formateur IA professionnel à Grenoble et partout en France. Masterclass IA et formations sur mesure.',
   keywords: [
-    'IA Générative',
+    'Formateur IA',
+    'Formateur IA Générative',
+    'Formateur Intelligence Artificielle',
+    'Expert IA',
     'Formation IA',
     'Formation IA Générative',
     'Masterclass IA',
@@ -30,6 +33,7 @@ export const metadata: Metadata = {
     'Art du Prompting',
     'Prompt Engineering',
     'Prompting',
+    'Formateur Grenoble',
     'Grenoble',
     'GitHub Copilot',
     'Agents IA',
@@ -60,16 +64,16 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'fr_FR',
     url: 'https://masterclass-ia.fr',
-    title: 'Franck Petretto - Formateur IA Générative',
+    title: 'Formateur IA | Franck Petretto | Expert IA Générative',
     description:
-      'Expert en Intelligence Artificielle Générative',
-    siteName: 'Franck Petretto - Formation IA',
+      'Formateur IA spécialisé en Intelligence Artificielle Générative, Microsoft Copilot et Copilot Studio. Formateur professionnel à Grenoble.',
+    siteName: 'Franck Petretto - Formateur IA',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Franck Petretto - Formateur IA Générative',
+    title: 'Formateur IA | Franck Petretto | Expert IA Générative',
     description:
-      'Expert en Intelligence Artificielle Générative',
+      'Formateur IA spécialisé en Intelligence Artificielle Générative, Microsoft Copilot et Copilot Studio',
   },
   alternates: {
     canonical: 'https://masterclass-ia.fr',

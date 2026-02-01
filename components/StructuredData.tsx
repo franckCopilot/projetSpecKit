@@ -98,11 +98,11 @@ export function StructuredData({ data }: StructuredDataProps) {
 export const organizationData: Organization = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Franck Petretto - Formation IA',
+  name: 'Franck Petretto - Formateur IA Professionnel',
   url: 'https://masterclass-ia.fr',
   logo: 'https://masterclass-ia.fr/logo.png',
   description:
-    'Formation professionnelle en Intelligence Artificielle Générative, Microsoft Copilot et assistants de codage.',
+    'Formateur IA professionnel spécialisé en Intelligence Artificielle Générative. Formation Microsoft Copilot, Copilot Studio, art du prompting et GitHub Copilot à Grenoble et en France.',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Grenoble',
@@ -124,9 +124,9 @@ export const personData: Person = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Franck Petretto',
-  jobTitle: 'Formateur en Intelligence Artificielle Générative',
+  jobTitle: 'Formateur IA | Expert Intelligence Artificielle Générative',
   description:
-    'Expert en IA Générative, Microsoft Copilot, Copilot Studio et assistants de codage IA',
+    'Formateur IA professionnel spécialisé en Intelligence Artificielle Générative. Expert Microsoft Copilot, Copilot Studio, art du prompting et GitHub Copilot. Formateur basé à Grenoble.',
   url: 'https://masterclass-ia.fr',
   address: {
     '@type': 'PostalAddress',
@@ -134,15 +134,18 @@ export const personData: Person = {
     addressCountry: 'FR',
   },
   knowsAbout: [
+    'Formation IA',
+    'Formateur Intelligence Artificielle',
     'Intelligence Artificielle Générative',
-    'Microsoft Copilot',
+    'Formateur Microsoft Copilot',
     'Copilot Studio',
     'Art du Prompting',
-    'Assistants de Codage IA',
+    'Formateur Assistants de Codage IA',
     'GitHub Copilot',
     'Large Language Models',
     'Prompt Engineering',
     'Transformation Digitale',
+    'Masterclass IA',
   ],
 };
 
@@ -150,10 +153,10 @@ export const personData: Person = {
 export const serviceData: Service = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  serviceType: 'Formation professionnelle en Intelligence Artificielle',
+  serviceType: 'Formateur IA - Formation professionnelle en Intelligence Artificielle',
   provider: {
     '@type': 'Person',
-    name: 'Franck Petretto',
+    name: 'Franck Petretto - Formateur IA',
   },
   areaServed: {
     '@type': 'Country',
@@ -188,9 +191,9 @@ export const serviceData: Service = {
 export const websiteData: WebSite = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Franck Petretto - Formation IA Générative',
+  name: 'Franck Petretto - Formateur IA Professionnel',
   url: 'https://masterclass-ia.fr',
   description:
-    'Formations professionnelles en Intelligence Artificielle Générative',
+    'Formateur IA expert en formations professionnelles Intelligence Artificielle Générative, Microsoft Copilot et Copilot Studio',
   inLanguage: 'fr-FR',
 };
