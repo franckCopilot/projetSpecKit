@@ -34,7 +34,7 @@ export const OFFRES: OffreFormation[] = [
     id: 'offre-copilot-m365',
     titre: 'Formation Microsoft Copilot M365 (chat et Copilot dans M365 apps)',
     publicCible: 'débutant/intermédiaire',
-    prix: 890,
+    prix: 990,
     description:
       'Formation complète Microsoft Copilot M365 : maîtrisez Copilot 365 intégré dans toute la suite Microsoft 365 (Word, Excel, PowerPoint, Teams, Outlook) pour booster votre productivité.',
     duree: '1 jour',
@@ -48,7 +48,7 @@ export const OFFRES: OffreFormation[] = [
     id: 'offre-copilot-studio',
     titre: 'Formation Microsoft Copilot Studio (création d\'agents IA)',
     publicCible: 'intermédiaire',
-    prix: 990,
+    prix: 1290,
     description:
       'Formation Copilot Studio et création d\'agents IA : apprenez à concevoir, créer et déployer vos propres agents IA personnalisés et assistants conversationnels avec Microsoft Copilot Studio pour automatiser vos processus métier.',
     duree: '2 jours',
@@ -63,7 +63,7 @@ export const OFFRES: OffreFormation[] = [
     titre:
       'Formation Assistants de Codage et IA pour Développeurs',
     publicCible: 'confirmé/développeur',
-    prix: 1490,
+    prix: 1690,
     description:
       'Formation complète pour développeurs : maîtrisez GitHub Copilot et les assistants de codage IA. Intégrez l\'Intelligence Artificielle dans vos workflows de développement avec VS Code, GitHub Copilot, et autres outils IA pour coder plus efficacement.',
     duree: '3 jours',
