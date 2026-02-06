@@ -207,5 +207,5 @@ Le site devrait apparaître dans les résultats pour :
 
 ---
 
-**Dernière mise à jour** : 2025-01-30  
+**Dernière mise à jour** : 2026-01-30  
 **Fichiers modifiés** : app/page.tsx, app/services/page.tsx, app/a-propos/page.tsx, app/contact/page.tsx, data/expert.ts, data/offres.ts

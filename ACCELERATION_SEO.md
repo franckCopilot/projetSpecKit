@@ -381,7 +381,7 @@ A: À Grenoble et partout en France en présentiel ou à distance...
 
 ---
 
-**Créé le :** 2025-01-30  
+**Créé le :** 2026-01-30  
 **Prochaine révision :** Après 1 mois de mise en œuvre
 
 ---

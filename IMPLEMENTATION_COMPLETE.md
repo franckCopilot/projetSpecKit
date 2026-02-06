@@ -213,4 +213,4 @@ Tous les User Stories (P1) sont implémentés et fonctionnels. Le build est réu
 
 ---
 
-**Développé par Copilot CLI** | Janvier 2025
+**Développé par Copilot CLI** | Janvier 2026

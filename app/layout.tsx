@@ -16,7 +16,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://masterclass-ia.fr'),
-  title: 'Formateur IA | Franck Petretto | Expert IA Générative Grenoble',
+  title: 'Formateur IA | Microsoft Copilot | Expert IA Générative Grenoble',
   description:
     'Formateur IA spécialisé en Intelligence Artificielle Générative. Expert en Microsoft Copilot, Copilot Studio, art du prompting et GitHub Copilot. Formateur IA professionnel à Grenoble et partout en France. Masterclass IA et formations sur mesure.',
   keywords: [
@@ -36,6 +36,8 @@ export const metadata: Metadata = {
     'Formateur Grenoble',
     'Grenoble',
     'GitHub Copilot',
+    'Copilot CLI',
+    'Assistants de Codage IA',
     'Agents IA',
     'Assistants IA',
     'LLM',
@@ -64,14 +66,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'fr_FR',
     url: 'https://masterclass-ia.fr',
-    title: 'Formateur IA | Franck Petretto | Expert IA Générative',
+    title: 'Formateur IA | Microsoft Copilot | Expert IA Générative',
     description:
       'Formateur IA spécialisé en Intelligence Artificielle Générative, Microsoft Copilot et Copilot Studio. Formateur professionnel à Grenoble.',
     siteName: 'Franck Petretto - Formateur IA',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Formateur IA | Franck Petretto | Expert IA Générative',
+    title: 'Formateur IA | Microsoft Copilot | Expert IA Générative',
     description:
       'Formateur IA spécialisé en Intelligence Artificielle Générative, Microsoft Copilot et Copilot Studio',
   },
@@ -98,7 +100,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <footer className="bg-gray-900 text-white py-8 mt-auto">
           <div className="container mx-auto px-4 text-center">
-            <p>&copy; 2025 Franck Petretto. Tous droits réservés.</p>
+            <p>&copy; 2026 Franck Petretto. Tous droits réservés.</p>
             
             {/* Réseaux sociaux */}
             <div className="mt-6 flex justify-center items-center space-x-8">

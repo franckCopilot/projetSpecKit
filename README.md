@@ -166,7 +166,7 @@ Pour les formations en IA Générative :
 
 ## 📄 License
 
-© 2025 Franck Petretto. Tous droits réservés.
+© 2026 Franck Petretto. Tous droits réservés.
 
 ## 🔧 Maintenance
 

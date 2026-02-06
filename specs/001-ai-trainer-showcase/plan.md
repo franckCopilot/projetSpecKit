@@ -1,6 +1,6 @@
 # Implementation Plan: Site Vitrine & Commercial pour Formateur IA
 
-**Branch**: `001-ai-trainer-showcase` | **Date**: 2025-01-27 | **Spec**: [spec.md](./spec.md)
+**Branch**: `001-ai-trainer-showcase` | **Date**: 2026-01-27 | **Spec**: [spec.md](./spec.md)
 **Input**: Feature specification from `/specs/001-ai-trainer-showcase/spec.md`
 
 **Note**: This template is filled in by the `/speckit.plan` command. See `.specify/templates/commands/plan.md` for the execution workflow.

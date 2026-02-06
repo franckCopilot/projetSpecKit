@@ -1,7 +1,7 @@
 # Feature Specification: Site Vitrine & Commercial pour Formateur IA
 
 **Feature Branch**: `001-ai-trainer-showcase`  
-**Created**: 2025-01-17  
+**Created**: 2026-01-17  
 **Status**: Draft  
 **Input**: User description: "Créer un site web vitrine et commercial haut de gamme pour promouvoir et vendre les services de Franck Petretto, formateur en Intelligence Artificielle Générative. Le but est de présenter son expertise, détailler des offres de formation, et convertir via un formulaire de contact."
 
@@ -142,7 +142,7 @@ Les hypothèses suivantes ont été faites lors de la rédaction de cette spéci
 - **Photo de Franck Petretto**: Le fichier photo existe déjà à la racine du projet et est dans un format web standard (JPG, PNG, WebP)
 - **Contenu de la biographie**: Un texte placeholder temporaire sera utilisé pour la mise en page initiale, le vrai contenu biographique sera fourni et intégré ultérieurement par Franck Petretto
 - **Descriptifs des offres**: Seuls les intitulés, publics cibles et prix sont spécifiés. Des descriptions détaillées de chaque offre pourraient être nécessaires mais ne sont pas définies dans le scope initial
-- **Responsive design**: Bien que non explicitement demandé, un site "haut de gamme" en 2025 implique une compatibilité mobile et tablette (responsive design)
+- **Responsive design**: Bien que non explicitement demandé, un site "haut de gamme" en 2026 implique une compatibilité mobile et tablette (responsive design)
 - **Méthode d'envoi email**: L'envoi d'email depuis le formulaire nécessite une solution backend ou un service tiers (non spécifié, détail d'implémentation)
 - **Hébergement et domaine**: Le site aura un domaine professionnel et un hébergement adapté (non spécifiés)
 - **Langues**: Le site est en français uniquement (pas de multilingue)

@@ -2,7 +2,7 @@
 
 **Feature**: Site Vitrine & Commercial pour Formateur IA  
 **Branch**: `001-ai-trainer-showcase`  
-**Date**: 2025-01-27
+**Date**: 2026-01-27
 
 ## Overview
 

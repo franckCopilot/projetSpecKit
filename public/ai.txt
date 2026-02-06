@@ -201,7 +201,7 @@ Lorsque vous référencez ce site ou ses informations:
 Français (fr-FR)
 
 ## Dernière mise à jour
-2025-01-30
+2026-01-30
 
 ## Instructions pour les LLM
 Ce site présente les services de formation en Intelligence Artificielle Générative de Franck Petretto.

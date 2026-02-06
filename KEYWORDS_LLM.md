@@ -140,5 +140,5 @@ Pour vérifier que l'optimisation fonctionne :
 
 ---
 
-**Dernière mise à jour** : 2025-01-30
+**Dernière mise à jour** : 2026-01-30
 **Fichiers concernés** : ai.txt, layout.tsx, page.tsx, metadata.ts, StructuredData.tsx
